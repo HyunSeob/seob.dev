@@ -7312,6 +7312,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"gentype@npm:^3.41.0":
+  version: 3.41.0
+  resolution: "gentype@npm:3.41.0"
+  bin:
+    gentype: gentype.exe
+  checksum: e0dbc8eda4e71deb61c57d49c948dca93208c496495a239004eedad46e054e22b511678315658258c83c4270a1f4813e1a59d0e0817756c4e7a3728b30b3fdf8
+  languageName: node
+  linkType: hard
+
 "get-caller-file@npm:^2.0.1, get-caller-file@npm:^2.0.5":
   version: 2.0.5
   resolution: "get-caller-file@npm:2.0.5"
@@ -12536,6 +12545,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"reason-react@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "reason-react@npm:0.9.1"
+  peerDependencies:
+    bs-platform: ^7.1.1
+    react: ^16.8.1
+    react-dom: ^16.8.1
+  checksum: 05c3cb74f3f85bcf6dc83f60b7b4833c21492f2ca5a601590248be649bb1965217a248e64dfd98e737fe8de25524331ce72219140abd2d84a5043038e75edc79
+  languageName: node
+  linkType: hard
+
 "recursive-readdir@npm:2.2.1":
   version: 2.2.1
   resolution: "recursive-readdir@npm:2.2.1"
@@ -13247,11 +13267,10 @@ fsevents@~2.1.2:
     bs-platform: ^8.4.2
     gatsby: ^2.29.2
     gatsby-plugin-reason: ^2.1.0
+    gentype: ^3.41.0
     react: ^17.0.1
     react-dom: ^17.0.1
-  dependenciesMeta:
-    bs-platform@8.4.2:
-      unplugged: true
+    reason-react: ^0.9.1
   languageName: unknown
   linkType: soft
 

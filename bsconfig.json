@@ -1,6 +1,6 @@
 {
   "name": "seob.dev",
-  "reason": { "react-jsx": 2 },
+  "reason": { "react-jsx": 3 },
   "bs-dependencies": ["reason-react"],
   "sources": [
     {
@@ -8,9 +8,15 @@
       "subdirs": true
     }
   ],
-  "package-specs": {
-    "module": "commonjs"
-  },
+  "package-specs": [
+    {
+      "module": "es6-global",
+      "in-source": true
+    }
+  ],
   "suffix": ".bs.js",
-  "refmt": 3
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "typescript"
+  }
 }

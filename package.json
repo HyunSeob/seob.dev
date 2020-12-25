@@ -6,16 +6,18 @@
   "repository": "git@github.com:HyunSeob/seob.dev.git",
   "author": "HyunSeob <sytte1017@gmail.com>",
   "license": "None",
+  "scripts": {
+    "dev": "gatsby develop",
+    "re:build": "bsb -make-world -clean-world",
+    "re:watch": "bsb -make-world -clean-world -w"
+  },
   "dependencies": {
     "bs-platform": "^8.4.2",
     "gatsby": "^2.29.2",
     "gatsby-plugin-reason": "^2.1.0",
+    "gentype": "^3.41.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "dependenciesMeta": {
-    "bs-platform@8.4.2": {
-      "unplugged": true
-    }
+    "react-dom": "^17.0.1",
+    "reason-react": "^0.9.1"
   }
 }
