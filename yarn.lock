@@ -13249,6 +13249,9 @@ fsevents@~2.1.2:
     gatsby-plugin-reason: ^2.1.0
     react: ^17.0.1
     react-dom: ^17.0.1
+  dependenciesMeta:
+    bs-platform@8.4.2:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
