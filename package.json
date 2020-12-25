@@ -1,0 +1,13 @@
+{
+  "name": "seob.dev",
+  "version": "0.0.0",
+  "description": "2021 HyunSeob Lee's Brand New Enginnering Blog ",
+  "main": "index.js",
+  "repository": "git@github.com:HyunSeob/seob.dev.git",
+  "author": "HyunSeob <sytte1017@gmail.com>",
+  "license": "None",
+  "private": false,
+  "dependencies": {
+    "gatsby": "^2.29.2"
+  }
+}
