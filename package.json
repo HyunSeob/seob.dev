@@ -6,8 +6,9 @@
   "repository": "git@github.com:HyunSeob/seob.dev.git",
   "author": "HyunSeob <sytte1017@gmail.com>",
   "license": "None",
-  "private": false,
   "dependencies": {
-    "gatsby": "^2.29.2"
+    "gatsby": "^2.29.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
