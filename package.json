@@ -12,12 +12,28 @@
     "re:watch": "bsb -make-world -clean-world -w"
   },
   "dependencies": {
+    "@reasonml-community/graphql-ppx": "^1.0.1",
+    "autoprefixer": "latest",
+    "bs-css-emotion": "^2.2.0",
     "bs-platform": "^8.4.2",
     "gatsby": "^2.29.2",
+    "gatsby-plugin-postcss": "^3.4.0",
     "gatsby-plugin-reason": "^2.1.0",
+    "gatsby-plugin-sharp": "^2.11.2",
+    "gatsby-remark-autolink-headers": "^2.8.0",
+    "gatsby-remark-images": "^3.8.1",
+    "gatsby-remark-prismjs": "^3.10.0",
+    "gatsby-remark-responsive-iframe": "^2.8.0",
+    "gatsby-source-filesystem": "^2.8.1",
+    "gatsby-transformer-remark": "^2.13.1",
+    "gatsby-transformer-sharp": "^2.9.0",
     "gentype": "^3.41.0",
+    "lodash": "^4.17.20",
+    "postcss": "latest",
+    "prismjs": "^1.22.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "reason-react": "^0.9.1"
+    "reason-react": "^0.9.1",
+    "tailwindcss": "latest"
   }
 }

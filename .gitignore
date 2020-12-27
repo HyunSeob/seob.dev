@@ -107,3 +107,5 @@ public
 *.bs.js
 lib/bs
 .merlin
+
+.graphql_ppx_cache

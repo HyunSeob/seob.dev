@@ -1,7 +1,7 @@
 {
   "name": "seob.dev",
   "reason": { "react-jsx": 3 },
-  "bs-dependencies": ["reason-react"],
+  "bs-dependencies": ["reason-react", "bs-css", "bs-css-emotion"],
   "sources": [
     {
       "dir": "src",
@@ -18,5 +18,12 @@
   "refmt": 3,
   "gentypeconfig": {
     "language": "typescript"
-  }
+  },
+  "ppx-flags": [
+    [
+      "@reasonml-community/graphql-ppx/ppx",
+      "-template-tag=graphql",
+      "-template-tag-location=gatsby"
+    ]
+  ]
 }
