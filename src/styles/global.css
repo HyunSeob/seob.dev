@@ -25,9 +25,21 @@ body {
     @apply mb-16;
   }
 
+  /* container 내 일반적인 마진 스타일 적용 */
+  .post-content > p,
+  .post-content > ul,
+  .post-content > ol,
+  .post-content > h1,
+  .post-content > h2,
+  .post-content > h3,
+  .post-content > h4,
+  .post-content > h5,
+  .post-content > h6 {
+    @apply mx-72;
+  }
+
   .post-content > p {
     @apply text-base;
-    @apply mx-72;
   }
 
   .post-content a {
@@ -43,37 +55,42 @@ body {
   }
 
   .post-content h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    @apply text-center;
     @apply font-bold;
-    @apply mx-72;
   }
 
   .post-content h1 {
-    @apply text-6xl;
+    @apply mt-36;
+    @apply text-7xl;
   }
 
   .post-content h2 {
-    @apply text-4xl;
+    @apply mt-24;
+    @apply text-5xl;
   }
 
   .post-content h3 {
-    @apply text-3xl;
+    @apply mt-20;
+    @apply text-4xl;
   }
 
   .post-content h4 {
-    @apply text-2xl;
+    @apply mt-16;
+    @apply text-3xl;
   }
 
   .post-content h5 {
-    @apply text-xl;
+    @apply mt-12;
+    @apply text-2xl;
   }
 
   .post-content h6 {
-    @apply text-lg;
+    @apply text-xl;
   }
 
   .post-content .anchor.before {
@@ -96,5 +113,22 @@ body {
     @apply border-gray-300;
     @apply px-1;
     font-size: 0.9em;
+  }
+
+  .post-content ul li {
+    @apply relative;
+    @apply pl-4;
+  }
+
+  .post-content ul li:not(:last-child) {
+    @apply mb-2;
+  }
+
+  .post-content ul li:before {
+    @apply absolute;
+    @apply left-0;
+    content: "•";
+    @apply w-1;
+    @apply text-center;
   }
 }
