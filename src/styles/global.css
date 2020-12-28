@@ -7,4 +7,94 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
+  font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", -apple-system,
+    BlinkMacSystemFont, "Basier Square", "Apple SD Gothic Neo", Roboto,
+    "Noto Sans KR", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  .post-content > *:not(:last-child) {
+    @apply mb-8;
+  }
+
+  .post-content > blockquote {
+    @apply text-2xl;
+    @apply italic;
+    @apply font-bold;
+    @apply px-48;
+    @apply mb-16;
+  }
+
+  .post-content > p {
+    @apply text-base;
+    @apply mx-72;
+  }
+
+  .post-content a {
+    @apply inline-block;
+    @apply text-blue-600;
+    @apply underline;
+
+    @apply transition-colors;
+  }
+
+  .post-content a:hover {
+    @apply text-blue-400;
+  }
+
+  .post-content h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+    @apply mx-72;
+  }
+
+  .post-content h1 {
+    @apply text-6xl;
+  }
+
+  .post-content h2 {
+    @apply text-4xl;
+  }
+
+  .post-content h3 {
+    @apply text-3xl;
+  }
+
+  .post-content h4 {
+    @apply text-2xl;
+  }
+
+  .post-content h5 {
+    @apply text-xl;
+  }
+
+  .post-content h6 {
+    @apply text-lg;
+  }
+
+  .post-content .anchor.before {
+    @apply h-full;
+    @apply flex;
+    @apply items-center;
+    @apply pr-4;
+  }
+
+  .post-content .anchor.before > svg {
+    @apply w-6;
+    @apply h-6;
+  }
+
+  .post-content code {
+    @apply rounded;
+    @apply bg-gray-100;
+    @apply text-green-600;
+    @apply border;
+    @apply border-gray-300;
+    @apply px-1;
+    font-size: 0.9em;
+  }
 }

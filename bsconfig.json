@@ -10,8 +10,12 @@
   ],
   "package-specs": [
     {
-      "module": "es6-global",
+      "module": "es6",
       "in-source": true
+    },
+    {
+      "module": "commonjs",
+      "in-source": false
     }
   ],
   "suffix": ".bs.js",
@@ -23,7 +27,7 @@
     [
       "@reasonml-community/graphql-ppx/ppx",
       "-template-tag=graphql",
-      "-template-tag-location=gatsby"
+      "-fragment-in-query=exclude"
     ]
   ]
 }

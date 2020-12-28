@@ -1,16 +1,17 @@
-[%graphql {|
+[%graphql
+  {|
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) @bsRecord {
       id
       excerpt(pruneLength: 160)
       html
-      frontmatter {
-        title
+      frontmatter @bsRecord {
+        title @bsRecord
         date(formatString: "MMMM DD, YYYY")
       }
     }
@@ -21,14 +22,19 @@
 
 [@react.component]
 let make = (~data, ~pageContext) => {
-  Js.log(pageContext);
-  
-  <article className="container mx-auto p-16">
-    <PostHeading>
-      {"Gatsby & Rescript & TailwindCSS를 사용해 블로그 만들기"}
-    </PostHeading>
-    <PostContent />
-  </article>
-}
+  Belt.Option.(
+    <article className="container mx-auto p-16">
+      <PostHeading>
+        {data.markdownRemark
+         ->flatMap(md => md.frontmatter)
+         ->flatMap(front => front.title)
+         ->getExn}
+      </PostHeading>
+      <PostContent
+        html={data.markdownRemark->flatMap(md => md.html)->getExn}
+      />
+    </article>
+  );
+};
 
-let default = make
+let default = make;
