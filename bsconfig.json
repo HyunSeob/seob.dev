@@ -1,7 +1,12 @@
 {
   "name": "seob.dev",
   "reason": { "react-jsx": 3 },
-  "bs-dependencies": ["reason-react", "bs-css", "bs-css-emotion"],
+  "bs-dependencies": [
+    "reason-react",
+    "bs-css",
+    "bs-css-emotion",
+    "reason-date-fns"
+  ],
   "sources": [
     {
       "dir": "src",

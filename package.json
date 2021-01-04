@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "gatsby develop",
     "re:build": "bsb -make-world -clean-world",
-    "re:watch": "bsb -make-world -clean-world -w"
+    "re:watch": "bsb -make-world -clean-world -w",
+    "get-graphql-schema": "get-graphql-schema http://localhost:8000/___graphql -j > graphql_schema.json"
   },
   "dependencies": {
     "@reasonml-community/graphql-ppx": "^1.0.1",
@@ -30,10 +31,14 @@
     "gentype": "^3.41.0",
     "lodash": "^4.17.20",
     "postcss": "latest",
+    "postcss-import": "^14.0.0",
+    "postcss-preset-env": "^6.7.0",
     "prismjs": "^1.22.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "reason-date-fns": "^1.0.2",
     "reason-react": "^0.9.1",
+    "slugify": "^1.4.6",
     "tailwindcss": "latest"
   }
 }

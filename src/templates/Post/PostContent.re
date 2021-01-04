@@ -1,3 +1,6 @@
+%raw
+{| import './PostContent.css'; |};
+
 [@react.component]
 let make = (~html) => {
   <div

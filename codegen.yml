@@ -1,0 +1,8 @@
+schema:
+  - http://localhost:8000/___graphql
+extensions:
+  codegen:
+    generates:
+      schema: ./graphql.schema-new.json:
+        plugins:
+          - "introspection"

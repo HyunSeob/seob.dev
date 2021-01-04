@@ -1,5 +1,6 @@
 {
   "css.validate": false,
+  "postcss.validate": false,
   "editor.quickSuggestions": {
     "strings": true
   }

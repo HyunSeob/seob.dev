@@ -94,24 +94,4 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-  // Generate link foreach tag page
-  // tagSet.forEach((tag) => {
-  //   createPage({
-  //     path: `/tags/${_.kebabCase(tag)}/`,
-  //     component: tagPage,
-  //     context: {
-  //       tag,
-  //     },
-  //   });
-  // });
-  // Generate link foreach category page
-  // categorySet.forEach((category) => {
-  //   createPage({
-  //     path: `/${_.kebabCase(category)}/`,
-  //     component: categoryPage,
-  //     context: {
-  //       category,
-  //     },
-  //   });
-  // });
 };
