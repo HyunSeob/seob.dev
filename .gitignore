@@ -107,5 +107,8 @@ public
 *.bs.js
 lib/bs
 .merlin
+.bsb.lock
 
 .graphql_ppx_cache
+
+.DS_Store

@@ -9,7 +9,8 @@ let make = (~html) => {
       Tailwind.text("base"),
       Tailwind.font("medium"),
       Tailwind.text("gray-700"),
-      Tailwind.py(32),
+      "py-16",
+      "md:py-32",
     ])}
     dangerouslySetInnerHTML={"__html": html}
   />;

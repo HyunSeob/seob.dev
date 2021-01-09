@@ -27,12 +27,10 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 690,
+              maxWidth: 1500,
             },
           },
-          {
-            resolve: "gatsby-remark-responsive-iframe",
-          },
+          "gatsby-remark-responsive-iframe",
           "gatsby-remark-prismjs",
           "gatsby-remark-autolink-headers",
         ],

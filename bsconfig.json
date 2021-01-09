@@ -5,7 +5,8 @@
     "reason-react",
     "bs-css",
     "bs-css-emotion",
-    "reason-date-fns"
+    "reason-date-fns",
+    "@moox/bs-react-helmet"
   ],
   "sources": [
     {

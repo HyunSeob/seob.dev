@@ -13,6 +13,7 @@
     "get-graphql-schema": "get-graphql-schema http://localhost:8000/___graphql -j > graphql_schema.json"
   },
   "dependencies": {
+    "@moox/bs-react-helmet": "^3.0.0",
     "@reasonml-community/graphql-ppx": "^1.0.1",
     "autoprefixer": "latest",
     "bs-css-emotion": "^2.2.0",
@@ -36,6 +37,7 @@
     "prismjs": "^1.22.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "reason-date-fns": "^1.0.2",
     "reason-react": "^0.9.1",
     "slugify": "^1.4.6",

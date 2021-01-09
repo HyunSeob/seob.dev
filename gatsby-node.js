@@ -1,28 +1,13 @@
 const path = require("path");
-const _ = require("lodash");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  let slug;
 
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
 
-    if (node.frontmatter?.title != null) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`;
-    } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
-      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-    } else if (parsedFilePath.dir === "") {
-      slug = `/${parsedFilePath.name}/`;
-    } else {
-      slug = `/${parsedFilePath.dir}/`;
-    }
-
-    if (node.frontmatter?.slug != null) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`;
-    }
-    createNodeField({ node, name: "slug", value: slug });
+    createNodeField({ node, name: "slug", value: `/${parsedFilePath.name}/` });
   }
 };
 
