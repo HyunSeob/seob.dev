@@ -8,6 +8,7 @@
   "license": "None",
   "scripts": {
     "dev": "gatsby develop",
+    "build": "yarn re:build && gatsby build",
     "re:build": "bsb -make-world -clean-world",
     "re:watch": "bsb -make-world -clean-world -w",
     "get-graphql-schema": "get-graphql-schema http://localhost:8000/___graphql -j > graphql_schema.json"
