@@ -30,7 +30,6 @@
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-remark": "^2.13.1",
     "gatsby-transformer-sharp": "^2.9.0",
-    "gentype": "^3.41.0",
     "lodash": "^4.17.20",
     "postcss": "latest",
     "postcss-import": "^14.0.0",

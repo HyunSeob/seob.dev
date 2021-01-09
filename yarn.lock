@@ -9061,15 +9061,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gentype@npm:^3.41.0":
-  version: 3.41.0
-  resolution: "gentype@npm:3.41.0"
-  bin:
-    gentype: gentype.exe
-  checksum: e0dbc8eda4e71deb61c57d49c948dca93208c496495a239004eedad46e054e22b511678315658258c83c4270a1f4813e1a59d0e0817756c4e7a3728b30b3fdf8
-  languageName: node
-  linkType: hard
-
 "get-caller-file@npm:^2.0.1, get-caller-file@npm:^2.0.5":
   version: 2.0.5
   resolution: "get-caller-file@npm:2.0.5"
@@ -16852,7 +16843,6 @@ fsevents@~2.1.2:
     gatsby-source-filesystem: ^2.8.1
     gatsby-transformer-remark: ^2.13.1
     gatsby-transformer-sharp: ^2.9.0
-    gentype: ^3.41.0
     lodash: ^4.17.20
     postcss: latest
     postcss-import: ^14.0.0
