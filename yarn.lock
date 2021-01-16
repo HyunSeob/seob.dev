@@ -8533,14 +8533,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-tagmanager@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "gatsby-plugin-google-tagmanager@npm:2.9.0"
+"gatsby-plugin-google-gtag@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "gatsby-plugin-google-gtag@npm:2.6.0"
   dependencies:
     "@babel/runtime": ^7.12.5
+    minimatch: ^3.0.4
   peerDependencies:
     gatsby: ^2.0.0
-  checksum: 19ab397099276257b0334ce7c6864bcab2518395532cbfb2242bf429fa8f503f2eacbaeb5c81f28aaf8fa5d49e84052b1fa7fff980b7f71f567db0281873f561
+  checksum: b8c5532147f8e4542c11c486204a5f414506d3fc336a6224f418f5437361ad0515538a30758b803860f07123a108a9c7145d06bf4d9ce964730a2261db940cc1
   languageName: node
   linkType: hard
 
@@ -16902,7 +16903,7 @@ fsevents@~2.1.2:
     bs-css-emotion: ^2.2.0
     bs-platform: ^8.4.2
     gatsby: ^2.29.2
-    gatsby-plugin-google-tagmanager: ^2.9.0
+    gatsby-plugin-google-gtag: ^2.6.0
     gatsby-plugin-postcss: ^3.4.0
     gatsby-plugin-react-helmet: ^3.8.0
     gatsby-plugin-reason: ^2.1.0
