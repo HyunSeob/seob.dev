@@ -1,10 +1,10 @@
 {
   "name": "seob.dev",
   "version": "0.0.0",
-  "description": "2021 HyunSeob Lee's Brand New Enginnering Blog ",
+  "description": "이현섭의 새로운 기술 블로그",
   "main": "index.js",
   "repository": "git@github.com:HyunSeob/seob.dev.git",
-  "author": "HyunSeob <sytte1017@gmail.com>",
+  "author": "HyunSeob <mail@hyunseob.me>",
   "license": "None",
   "scripts": {
     "dev": "gatsby develop",
@@ -25,6 +25,7 @@
     "gatsby-plugin-reason": "^2.1.0",
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-remark-autolink-headers": "^2.8.0",
+    "gatsby-remark-copy-linked-files": "^2.8.0",
     "gatsby-remark-images": "^3.8.1",
     "gatsby-remark-prismjs": "^3.10.0",
     "gatsby-remark-responsive-iframe": "^2.8.0",

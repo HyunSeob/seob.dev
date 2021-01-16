@@ -12,13 +12,11 @@ module.exports = {
     },
   },
   plugins: [
-    "gatsby-plugin-postcss",
-    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: `${__dirname}/posts/`,
+        path: `${__dirname}/content/posts/`,
       },
     },
     {
@@ -29,16 +27,23 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1500,
-              ignoreFileExtensions: [],
             },
           },
-          "gatsby-remark-responsive-iframe",
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
           "gatsby-remark-prismjs",
+          `gatsby-remark-copy-linked-files`,
           "gatsby-remark-autolink-headers",
         ],
       },
     },
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-postcss",
+    `gatsby-plugin-react-helmet`,
   ],
 };
