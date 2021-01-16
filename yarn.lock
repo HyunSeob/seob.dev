@@ -8533,6 +8533,20 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-google-analytics@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "gatsby-plugin-google-analytics@npm:2.9.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    minimatch: 3.0.4
+  peerDependencies:
+    gatsby: ^2.0.0
+    react: ^16.4.2
+    react-dom: ^16.4.2
+  checksum: ac1f11136453b122ca426f5643d29ec164420319cc08d53cc6cabecfe99a6c6c859e81550e1d324c7c39540e2f10018d6c6515aed22116d4e40e63952ca619c9
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-page-creator@npm:^2.7.2":
   version: 2.7.2
   resolution: "gatsby-plugin-page-creator@npm:2.7.2"
@@ -8754,6 +8768,18 @@ fsevents@~2.1.2:
   peerDependencies:
     gatsby: ^2.0.0
   checksum: 34eed265434a35de154d5ded53eff8f6e9689fbcf39c6b197b60f9b60a7ca806ccce37ae9a48c9d10a30f2cdc30a5ea3c1cb36dd640cb6649e35f22db854b0e4
+  languageName: node
+  linkType: hard
+
+"gatsby-remark-external-links@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "gatsby-remark-external-links@npm:0.0.4"
+  dependencies:
+    babel-runtime: ^6.26.0
+    is-relative-url: ^2.0.0
+    unist-util-find: ^1.0.1
+    unist-util-visit: ^1.1.3
+  checksum: c65e95b72ee0a3903903433f3bb9c319e01f7cafb1666ad2f1045fe233232dd988c350c1d4b1b9b5acf355ef04611cc6b871d024424ffe732fdf2a8005844fe7
   languageName: node
   linkType: hard
 
@@ -11038,6 +11064,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"is-relative-url@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "is-relative-url@npm:2.0.0"
+  dependencies:
+    is-absolute-url: ^2.0.0
+  checksum: 49361000d7479edbb124863a738db69cef205fff8571c1b4af2b6beab03dec9b1efe8583e95085a08fb26427aaa26fba0912ce7e58219225a4a7477bd2e72bb4
+  languageName: node
+  linkType: hard
+
 "is-relative-url@npm:^3.0.0":
   version: 3.0.0
   resolution: "is-relative-url@npm:3.0.0"
@@ -11894,6 +11929,13 @@ fsevents@~2.1.2:
   version: 4.4.2
   resolution: "lodash.get@npm:4.4.2"
   checksum: 447e575e3caa5131ef44e5a0c135b1614f3c937d86b3be0568f9da7b0fd015010af3b6b4e41edf6e2698c9ce2dcc061ca71b31f274f799c991dceb018be16e4f
+  languageName: node
+  linkType: hard
+
+"lodash.iteratee@npm:^4.5.0":
+  version: 4.7.0
+  resolution: "lodash.iteratee@npm:4.7.0"
+  checksum: 1d2f0f09764d0cc1b9cc93796e71d6693e2a48f3d2254dc508dc5dd774c8a02e9d47237a2a52a2d795c19c88d9a0be7051185755b48d3be16db268213c0cb3e6
   languageName: node
   linkType: hard
 
@@ -16863,12 +16905,14 @@ fsevents@~2.1.2:
     bs-css-emotion: ^2.2.0
     bs-platform: ^8.4.2
     gatsby: ^2.29.2
+    gatsby-plugin-google-analytics: ^2.9.0
     gatsby-plugin-postcss: ^3.4.0
     gatsby-plugin-react-helmet: ^3.8.0
     gatsby-plugin-reason: ^2.1.0
     gatsby-plugin-sharp: ^2.11.2
     gatsby-remark-autolink-headers: ^2.8.0
     gatsby-remark-copy-linked-files: ^2.8.0
+    gatsby-remark-external-links: ^0.0.4
     gatsby-remark-images: ^3.8.1
     gatsby-remark-prismjs: ^3.10.0
     gatsby-remark-responsive-iframe: ^2.8.0
@@ -18871,6 +18915,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"unist-util-find@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "unist-util-find@npm:1.0.2"
+  dependencies:
+    lodash.iteratee: ^4.5.0
+    unist-util-visit: ^1.1.0
+  checksum: 3401e41606f757a5d01fa63915ffb9a25f439e272b96d24db03fbccd8311cc7f0a37de4586450ebc8a4fcf9077fcebc7a65047f982f5895aa3bf6ddbc153cb7e
+  languageName: node
+  linkType: hard
+
 "unist-util-generated@npm:^1.1.0":
   version: 1.1.6
   resolution: "unist-util-generated@npm:1.1.6"
@@ -18986,7 +19040,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"unist-util-visit@npm:^1.0.0, unist-util-visit@npm:^1.1.0, unist-util-visit@npm:^1.4.1":
+"unist-util-visit@npm:^1.0.0, unist-util-visit@npm:^1.1.0, unist-util-visit@npm:^1.1.3, unist-util-visit@npm:^1.4.1":
   version: 1.4.1
   resolution: "unist-util-visit@npm:1.4.1"
   dependencies:

@@ -18,8 +18,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const postPage = path.resolve("src/templates/Post/Post.bs.js");
-  // const tagPage = path.resolve("src/templates/tag.js");
-  // const categoryPage = path.resolve("src/templates/category.js");
 
   const markdownQueryResult = await graphql(
     `
@@ -33,7 +31,6 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
                 tags
-                categories
               }
             }
           }
@@ -56,12 +53,6 @@ exports.createPages = async ({ graphql, actions }) => {
     if (edge.node.frontmatter.tags) {
       edge.node.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag);
-      });
-    }
-
-    if (edge.node.frontmatter.categories) {
-      edge.node.frontmatter.categories.forEach((category) => {
-        categorySet.add(category);
       });
     }
 

@@ -3,12 +3,14 @@ module.exports = {
     title: `seob.dev`,
     author: {
       name: `이현섭`,
-      summary: `프론트엔드 개발자`,
+      summary: `Frontend Developer`,
     },
-    description: `개발하면서 배운 것들을 주로 올립니다.`,
+    description: `seob.dev는 프론트엔드 개발을 다루는 블로그입니다.`,
     siteUrl: `https://seob.dev/`,
     social: {
-      twitter: `HyunSeob_`,
+      github: "HyunSeob",
+      facebook: "hyunseob.lee.7",
+      twitter: `@HyunSeob_`,
     },
   },
   plugins: [
@@ -38,6 +40,7 @@ module.exports = {
           "gatsby-remark-prismjs",
           `gatsby-remark-copy-linked-files`,
           "gatsby-remark-autolink-headers",
+          `gatsby-remark-external-links`,
         ],
       },
     },
@@ -45,5 +48,11 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-postcss",
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-J5YSX4SY3K",
+      },
+    },
   ],
 };
