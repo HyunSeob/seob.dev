@@ -22,16 +22,20 @@ open Js.Nullable
   }
 `)
 
+type pageContext = {slug: string}
+
 let query = BlogPostBySlug.query
 
 @react.component
-let make = (~data as rawData, ~pageContext) => {
+let make = (~data as rawData, ~pageContext: pageContext) => {
   let data = BlogPostBySlug.unsafe_fromJson(rawData)
 
   let matter = data.markdownRemark->toOption->flatMap(md => toOption(md.frontmatter))
   let title = matter->flatMap(front => toOption(front.title))->getExn
   let description = data.markdownRemark->toOption->flatMap(md => toOption(md.excerpt))->getExn
 
+  let createdAt =
+    matter->flatMap(front => toOption(front.createdAt))->flatMap(Js.Json.decodeString)->getExn
   let updatedAt =
     matter->flatMap(front => toOption(front.updatedAt))->flatMap(Js.Json.decodeString)->getExn
 
@@ -41,24 +45,17 @@ let make = (~data as rawData, ~pageContext) => {
       // <meta name="keywords" content="Year in review" />
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
-      <meta
-        property="og:url" content="https://hyunseob.github.io/2019/12/31/2019-year-in-review/ "
-      />
+      <meta property="og:url" content={`https://seob.dev/posts/${pageContext.slug}/`} />
       <meta property="og:site_name" content="seob.dev" />
       <meta property="og:description" content={description} />
-      <meta property="og:locale" content="ko" />
-      <meta
-        property="og:image"
-        content="https://hyunseob.github.io/images/nordwood-themes-C0sW3yscQXc-unsplash.jpg"
-      />
-      <meta property="og:updated_time" content={updatedAt} />
+      <meta property="og:locale" content="ko_KR" />
+      <meta property="og:image" content="https://seob.dev/og-image.png" />
+      <meta property="article:published_time" content={createdAt} />
+      <meta property="article:modified_time" content={updatedAt} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta
-        name="twitter:image"
-        content="https://hyunseob.github.io/images/nordwood-themes-C0sW3yscQXc-unsplash.jpg"
-      />
+      <meta name="twitter:image" content="https://seob.dev/og-image.png" />
       <meta name="twitter:creator" content="@HyunSeob_" />
     </BsReactHelmet>
     <PostHeading>

@@ -7,7 +7,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
 
-    createNodeField({ node, name: "slug", value: `/${parsedFilePath.name}/` });
+    createNodeField({
+      node,
+      name: "slug",
+      value: parsedFilePath.name,
+    });
   }
 };
 
@@ -67,7 +71,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const prevEdge = postsEdges[prevID];
 
     createPage({
-      path: edge.node.fields.slug,
+      path: `/posts/${edge.node.fields.slug}/`,
       component: postPage,
       context: {
         slug: edge.node.fields.slug,
