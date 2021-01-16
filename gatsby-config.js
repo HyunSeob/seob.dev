@@ -49,7 +49,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         trackingId: "G-J5YSX4SY3K",
       },

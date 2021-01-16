@@ -8533,17 +8533,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-analytics@npm:^2.9.0":
+"gatsby-plugin-google-tagmanager@npm:^2.9.0":
   version: 2.9.0
-  resolution: "gatsby-plugin-google-analytics@npm:2.9.0"
+  resolution: "gatsby-plugin-google-tagmanager@npm:2.9.0"
   dependencies:
     "@babel/runtime": ^7.12.5
-    minimatch: 3.0.4
   peerDependencies:
     gatsby: ^2.0.0
-    react: ^16.4.2
-    react-dom: ^16.4.2
-  checksum: ac1f11136453b122ca426f5643d29ec164420319cc08d53cc6cabecfe99a6c6c859e81550e1d324c7c39540e2f10018d6c6515aed22116d4e40e63952ca619c9
+  checksum: 19ab397099276257b0334ce7c6864bcab2518395532cbfb2242bf429fa8f503f2eacbaeb5c81f28aaf8fa5d49e84052b1fa7fff980b7f71f567db0281873f561
   languageName: node
   linkType: hard
 
@@ -16905,7 +16902,7 @@ fsevents@~2.1.2:
     bs-css-emotion: ^2.2.0
     bs-platform: ^8.4.2
     gatsby: ^2.29.2
-    gatsby-plugin-google-analytics: ^2.9.0
+    gatsby-plugin-google-tagmanager: ^2.9.0
     gatsby-plugin-postcss: ^3.4.0
     gatsby-plugin-react-helmet: ^3.8.0
     gatsby-plugin-reason: ^2.1.0
