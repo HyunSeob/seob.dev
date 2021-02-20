@@ -25,6 +25,7 @@ let make = () => {
   let data: PostList.Raw.t = Gatsby.useStaticQuery(PostList.query)
 
   <>
+    <Head />
     <main className="p-4">
       <div className="mb-12 max-w-2xl mx-auto">
         {Belt.Array.map(data.allMarkdownRemark.nodes, node => {

@@ -57,24 +57,14 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
 
   <>
     <article className="container mx-auto py-16 px-4">
-      <BsReactHelmet defaultTitle={title}>
-        <meta name="description" content={description} />
+      <SEO
+        title={`${title} / seob.dev`}
+        description={description}
+        url={`https://seob.dev/posts/${pageContext.slug}/`}>
         // <meta name="keywords" content="Year in review" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content={`https://seob.dev/posts/${pageContext.slug}/`} />
-        <meta property="og:site_name" content={siteMetadata.title->toOption->getExn} />
-        <meta property="og:description" content={description} />
-        <meta property="og:locale" content="ko_KR" />
-        <meta property="og:image" content="https://seob.dev/og-image.png" />
         <meta property="article:published_time" content={createdAt} />
         <meta property="article:modified_time" content={updatedAt} />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://seob.dev/og-image.png" />
-        <meta name="twitter:creator" content="@HyunSeob_" />
-      </BsReactHelmet>
+      </SEO>
       <PostHeading>
         {data.markdownRemark
         ->toOption
