@@ -1,0 +1,36 @@
+@layer base {
+  .gatsby-highlight {
+    @apply bg-gray-800;
+    @apply text-white;
+    @apply rounded-xl;
+  }
+
+  .gatsby-highlight > pre {
+    @apply p-4;
+  }
+
+  .gatsby-highlight > pre .keyword {
+    @apply text-green-400;
+  }
+
+  .gatsby-highlight > pre .comment {
+    @apply text-gray-500;
+  }
+
+  .gatsby-highlight > pre .punctuation {
+    @apply text-purple-400;
+  }
+
+  .gatsby-highlight > pre .generic-function,
+  .gatsby-highlight > pre .function {
+    @apply text-yellow-400;
+  }
+
+  .gatsby-highlight > pre .operator {
+    @apply text-white;
+  }
+
+  .gatsby-highlight > pre .generic {
+    @apply text-blue-400;
+  }
+}

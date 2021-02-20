@@ -138,15 +138,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
         </div>
       </section>
     </article>
-    <footer className="bg-gray-100">
-      <div className="max-w-2xl mx-auto py-12 px-4 text-center">
-        <img
-          src="/logo.png" alt={siteMetadata.title->toOption->getExn} className="w-48 mb-6 m-auto"
-        />
-        <p className="text-md"> {siteMetadata.description->toOption->getExn->React.string} </p>
-        <small> {`© 이현섭`->React.string} </small>
-      </div>
-    </footer>
+    <Footer />
   </>
 }
 

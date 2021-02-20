@@ -37,6 +37,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: `Ayu Light`,
+              extensions: ["rescript-vscode", "ayu"],
+            },
+          },
           "gatsby-remark-prismjs",
           `gatsby-remark-copy-linked-files`,
           "gatsby-remark-autolink-headers",

@@ -24,6 +24,11 @@
     @apply mx-auto;
   }
 
+  .post-content > pre.grvsc-container {
+    @apply max-w-3xl;
+    @apply mx-auto;
+  }
+
   .post-content > p {
     @apply text-base;
   }
@@ -90,7 +95,7 @@
     @apply h-6;
   }
 
-  .post-content code {
+  .post-content code:not(pre code) {
     @apply rounded;
     @apply bg-gray-100;
     @apply text-green-600;
@@ -100,16 +105,19 @@
     font-size: 0.9em;
   }
 
-  .post-content ul li {
+  .post-content ul li,
+  .post-content ol li {
     @apply relative;
     @apply pl-4;
   }
 
-  .post-content ul li:not(:last-child) {
+  .post-content ul li:not(:last-child),
+  .post-content ol li:not(:last-child) {
     @apply mb-2;
   }
 
-  .post-content ul li:before {
+  .post-content ul li:before,
+  .post-content ol li:before {
     @apply absolute;
     @apply left-0;
     content: "•";

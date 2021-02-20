@@ -13,3 +13,7 @@ let px = (width: int) => {
 let py = width => {
   `py-${Belt.Int.toString(width)}`
 }
+
+let add = (a, b) => {
+  a + b
+}
