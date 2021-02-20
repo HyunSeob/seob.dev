@@ -1,5 +1,5 @@
 @react.component
-let make = (~title, ~description, ~url, ~children) => {
+let make = (~title, ~description, ~url, ~children: option<React.element>=?) => {
   <BsReactHelmet defaultTitle={title}>
     <meta name="description" content={description} />
     <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@ let make = (~title, ~description, ~url, ~children) => {
     <meta name="twitter:image" content="https://seob.dev/og-image.png" />
     <meta name="twitter:creator" content="@HyunSeob_" />
     <link rel="canonical" href={url} />
-    {children}
+    {children->Belt.Option.getWithDefault(<> </>)}
   </BsReactHelmet>
 }
 
