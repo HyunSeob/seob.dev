@@ -29,7 +29,7 @@ BuckleScript는 컴파일러입니다. 앞서 말씀드린 OCaml을 JavaScript�
 
 2020년에 Reason과 BuckleScript를 합쳐 JavaScript로 컴파일하는 프로젝트는 ReScript라는 프로젝트로 재탄생합니다.
 
-"[BucketScript is Rebranding](https://rescript-lang.org/blog/bucklescript-is-rebranding)"이라는 글을 보면 왜 기존 구조에서 ReScript로 옮겨가게 되었는지를 설명하는데, 가장 큰 이유로 "학습의 어려움"을 꼽고 있습니다. 특히, Reason으로 요즘 프론트엔드에서 가장 많이 선택하는 React 앱을 개발하는 케이스에서 일어날 수 있는 어려움에 대해서 설명합니다.
+"[BuckleScript is Rebranding](https://rescript-lang.org/blog/bucklescript-is-rebranding)"이라는 글을 보면 왜 기존 구조에서 ReScript로 옮겨가게 되었는지를 설명하는데, 가장 큰 이유로 "학습의 어려움"을 꼽고 있습니다. 특히, Reason으로 요즘 프론트엔드에서 가장 많이 선택하는 React 앱을 개발하는 케이스에서 일어날 수 있는 어려움에 대해서 설명합니다.
 
 Reason으로 React를 개발하기 위해서는 당장 JavaScript / React / Reason 은 물론이고, ReasonReact라는 Reason → React 바인딩, OCaml, BuckleScript에 대한 얕은 지식도 어느정도 요구하게 된다는 것이죠. 이렇게 알아야 할 것이 많다보니 아무래도 JavaScript 만을 다뤄본 사람의 입장에서는 어렵다고 느낄만 합니다.
 
