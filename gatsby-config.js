@@ -61,5 +61,6 @@ module.exports = {
         trackingIds: ["G-J5YSX4SY3K"],
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 };

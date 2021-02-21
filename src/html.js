@@ -84,6 +84,10 @@ export default function HTML(props) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
         {props.headComponents}
+        <meta
+          name="google-site-verification"
+          content="3SgVTQy6ieRbUfk-vAK8QxBWpjLOFXnR1-Vr-bRgpMQ"
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
