@@ -46,7 +46,7 @@
     @apply mx-auto;
   }
 
-  .post-content > pre.grvsc-container {
+  .post-content > pre {
     @apply max-w-3xl;
     @apply -mx-4;
 
