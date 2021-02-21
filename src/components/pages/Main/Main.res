@@ -26,8 +26,9 @@ let make = () => {
 
   <>
     <Head />
-    <main className="p-4">
-      <div className="mb-12 max-w-2xl mx-auto">
+    <NavigationBar />
+    <main className="py-4">
+      <div className="mb-12 max-w-2xl mx-auto px-4">
         {Belt.Array.map(data.allMarkdownRemark.nodes, node => {
           let frontmatter = node.frontmatter->toOption->getExn
           let slug = node.fields->toOption->flatMap(field => toOption(field.slug))->getExn

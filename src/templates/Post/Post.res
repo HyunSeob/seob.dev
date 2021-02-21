@@ -58,15 +58,16 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
   let updatedAt = matter.updatedAt->flatMap(decodeString)->getExn
 
   <>
+    <SEO
+      title={`${title} / seob.dev`}
+      description={description}
+      url={`https://seob.dev/posts/${pageContext.slug}/`}>
+      // <meta name="keywords" content="Year in review" />
+      <meta property="article:published_time" content={createdAt} />
+      <meta property="article:modified_time" content={updatedAt} />
+    </SEO>
+    <NavigationBar />
     <article className="container mx-auto py-16 px-4">
-      <SEO
-        title={`${title} / seob.dev`}
-        description={description}
-        url={`https://seob.dev/posts/${pageContext.slug}/`}>
-        // <meta name="keywords" content="Year in review" />
-        <meta property="article:published_time" content={createdAt} />
-        <meta property="article:modified_time" content={updatedAt} />
-      </SEO>
       <PostHeading> {title} </PostHeading>
       <span className="block text-sm text-right max-w-2xl mx-auto italic text-gray-500 mt-8">
         {Js.Date.fromString(updatedAt)
