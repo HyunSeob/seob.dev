@@ -41,7 +41,8 @@ let make = () => {
               </h3>
               <p className="text-gray-700 text-base">
                 {React.string(node.excerpt->toOption->getExn)}
-                <span className="underline ml-2"> {`더 읽기`->React.string} </span>
+                {` `->React.string}
+                <span className="underline whitespace-nowrap"> {`더 읽기`->React.string} </span>
               </p>
             </Gatsby.link>
           </article>

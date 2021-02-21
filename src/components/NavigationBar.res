@@ -1,7 +1,7 @@
 module NavItem = {
   @react.component
   let make = (~children, ~_to) => {
-    <li className="text-lg font-semibold px-2">
+    <li className="text-lg font-semibold pl-4">
       <Gatsby.link
         _to={_to}
         className="text-gray-700 hover:text-blue-600 transition-colors"
