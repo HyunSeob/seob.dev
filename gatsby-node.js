@@ -45,7 +45,6 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   const tagSet = new Set();
-  const categorySet = new Set();
 
   const postsEdges = markdownQueryResult.data.allMarkdownRemark.edges;
 
