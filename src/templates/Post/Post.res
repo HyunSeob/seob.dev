@@ -1,6 +1,5 @@
-open Belt.Option
+open Nullable
 open ReasonDateFns
-open Js.Nullable
 
 %graphql(`
   query BlogPostBySlug($slug: String!) {
@@ -37,23 +36,26 @@ type pageContext = {slug: string}
 
 let query = BlogPostBySlug.query
 
+let decodeString = str => {
+  Js.Json.decodeString(str)->Js.Nullable.fromOption
+}
+
 @react.component
 let make = (~data as rawData, ~pageContext: pageContext) => {
   let data = BlogPostBySlug.unsafe_fromJson(rawData)
 
-  let matter = data.markdownRemark->toOption->flatMap(md => toOption(md.frontmatter))
-  let siteMetadata = data.site->toOption->flatMap(site => toOption(site.siteMetadata))->getExn
+  let markdown = data.markdownRemark->getExn
+  let matter = markdown.frontmatter->getExn
+  let siteMetadata = data.site->flatMap(site => site.siteMetadata)->getExn
 
-  let author = siteMetadata.author->toOption->getExn
-  let social = siteMetadata.social->toOption->getExn
+  let author = siteMetadata.author->getExn
+  let social = siteMetadata.social->getExn
 
-  let title = matter->flatMap(front => toOption(front.title))->getExn
-  let description = data.markdownRemark->toOption->flatMap(md => toOption(md.excerpt))->getExn
+  let title = matter.title->getExn
+  let description = markdown.excerpt->getExn
 
-  let createdAt =
-    matter->flatMap(front => toOption(front.createdAt))->flatMap(Js.Json.decodeString)->getExn
-  let updatedAt =
-    matter->flatMap(front => toOption(front.updatedAt))->flatMap(Js.Json.decodeString)->getExn
+  let createdAt = matter.createdAt->flatMap(decodeString)->getExn
+  let updatedAt = matter.updatedAt->flatMap(decodeString)->getExn
 
   <>
     <article className="container mx-auto py-16 px-4">
@@ -65,13 +67,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
         <meta property="article:published_time" content={createdAt} />
         <meta property="article:modified_time" content={updatedAt} />
       </SEO>
-      <PostHeading>
-        {data.markdownRemark
-        ->toOption
-        ->flatMap(md => toOption(md.frontmatter))
-        ->flatMap(front => toOption(front.title))
-        ->getExn}
-      </PostHeading>
+      <PostHeading> {title} </PostHeading>
       <span className="block text-sm text-right max-w-2xl mx-auto italic text-gray-500 mt-8">
         {Js.Date.fromString(updatedAt)
         |> DateFns.formatWithOptions(
@@ -83,7 +79,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
           {`에 마지막으로 업데이트 되었습니다.`->React.string}
         </time>
       </span>
-      <PostContent html={data.markdownRemark->toOption->flatMap(md => toOption(md.html))->getExn} />
+      <PostContent html={markdown.html->getExn} />
       <hr className="max-w-2xl mx-auto" />
       <section className="max-w-2xl mx-auto pt-12">
         <h4 className="text-gray-900 text-xl md:text-2xl font-bold mb-4">
@@ -98,27 +94,27 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
           />
           <div className="pl-4">
             <div className="flex text-gray-900 text-md md:text-lg">
-              <span className="font-bold"> {author.name->toOption->getExn->React.string} </span>
+              <span className="font-bold"> {author.name->getExn->React.string} </span>
               <span className="inline-block mx-2 text-gray-200"> {`|`->React.string} </span>
-              <span> {author.summary->toOption->getExn->React.string} </span>
+              <span> {author.summary->getExn->React.string} </span>
             </div>
             <div className="flex text-gray-700 text-sm md:text-md">
               <a
-                href={`https://github.com/${social.github->toOption->getExn}`}
+                href={`https://github.com/${social.github->getExn}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-2">
                 {`GitHub`->React.string}
               </a>
               <a
-                href={`https://twitter.com/${social.twitter->toOption->getExn}`}
+                href={`https://twitter.com/${social.twitter->getExn}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-2">
                 {`Twitter`->React.string}
               </a>
               <a
-                href={`https://www.facebook.com/${social.facebook->toOption->getExn}`}
+                href={`https://www.facebook.com/${social.facebook->getExn}`}
                 target="_blank"
                 rel="noopener noreferrer">
                 {`Facebook`->React.string}
