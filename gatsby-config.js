@@ -111,7 +111,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "seob.dev RSS Feed",
+            title: "seob.dev",
             match: "^/posts/",
           },
         ],
