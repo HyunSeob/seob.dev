@@ -85,10 +85,10 @@ module.exports = {
                   ...edge.node.frontmatter,
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.siteUrl}/${encodeURIComponent(
+                  url: `${site.siteMetadata.siteUrl}/posts/${encodeURIComponent(
                     edge.node.fields.slug
                   )}`,
-                  guid: `${site.siteMetadata.siteUrl}/${edge.node.fields.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/posts/${edge.node.fields.slug}`,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 };
               });
