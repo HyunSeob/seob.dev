@@ -9236,6 +9236,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "fs-extra@npm:9.1.0"
+  dependencies:
+    at-least-node: ^1.0.0
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: e667d8df54113b527bf5830dd9db8f142618db488894b329fe07724c7020dfacf8a372b144a74e683ae44e66f56117adca9cac165950dda7d83537c46c10dc4b
+  languageName: node
+  linkType: hard
+
 "fs-minipass@npm:^2.0.0":
   version: 2.1.0
   resolution: "fs-minipass@npm:2.1.0"
@@ -9442,6 +9454,23 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-feed@npm:^2.13.1":
+  version: 2.13.1
+  resolution: "gatsby-plugin-feed@npm:2.13.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    "@hapi/joi": ^15.1.1
+    common-tags: ^1.8.0
+    fs-extra: ^9.1.0
+    gatsby-plugin-utils: ^0.9.0
+    lodash.merge: ^4.6.2
+    rss: ^1.2.2
+  peerDependencies:
+    gatsby: ^2.4.0
+  checksum: 39f801ab2da685f3d0e681bdfa3ea94f6de9892f02b22d8af70618341911ab811a9fd30f4d6b6e085cecc33554c2ed89386fa73e810c3e32462492eca7a7336b
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-google-gtag@npm:^2.6.0":
   version: 2.6.0
   resolution: "gatsby-plugin-google-gtag@npm:2.6.0"
@@ -9578,6 +9607,17 @@ fsevents@~2.1.2:
   peerDependencies:
     gatsby: ^2.24.79
   checksum: 1662f43f7e39a4aab43065df4066214525a581d6414a5b121e2c186725db00f28f5bca1c91ef36b47210f846d6ad7a6f81dab5c8ba341cff967f678316054571
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "gatsby-plugin-utils@npm:0.9.0"
+  dependencies:
+    joi: ^17.2.1
+  peerDependencies:
+    gatsby: ^2.24.79
+  checksum: ceba53f7d4bcafa57a3632fd7d7bb2ac177f8cac592affa7f83d98ca3fe85922d5f4e3bbf85eaad11f8d8d2c6338c26417b96e47a13c17d8c2e2defcea940315
   languageName: node
   linkType: hard
 
@@ -13332,6 +13372,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"lodash.merge@npm:^4.6.2":
+  version: 4.6.2
+  resolution: "lodash.merge@npm:4.6.2"
+  checksum: 4e2bb42a87a148991458d7c384bc197e96f7115e9536fc8e2c86ae9e99ce1c1f693ff15eb85761952535f48d72253aed8e673d9f32dde3e671cd91e3fde220a7
+  languageName: node
+  linkType: hard
+
 "lodash.once@npm:^4.0.0":
   version: 4.1.1
   resolution: "lodash.once@npm:4.1.1"
@@ -13940,6 +13987,22 @@ fsevents@~2.1.2:
   version: 1.45.0
   resolution: "mime-db@npm:1.45.0"
   checksum: 86701c54f748c72a5c05c16f881cdfa01db44a61e52f4cef3d872b5f3e4a3c4186c28df7a5fec31debc9bee42d5afc9b86ff8ff3d3eaf1440f07140b94a33d4a
+  languageName: node
+  linkType: hard
+
+"mime-db@npm:~1.25.0":
+  version: 1.25.0
+  resolution: "mime-db@npm:1.25.0"
+  checksum: 4b83320e60f57b76c3c4d6f96335a67d10bbfdb164a303b0384a2cbe2642b78ad1926f72a2527f48fa129f310a5321d578c004d93fcb118594398b35234e14be
+  languageName: node
+  linkType: hard
+
+"mime-types@npm:2.1.13":
+  version: 2.1.13
+  resolution: "mime-types@npm:2.1.13"
+  dependencies:
+    mime-db: ~1.25.0
+  checksum: 30ccfa2bc1c44bc569345b4118e250a38786e7fc3ad78f61ca54808daa49b8f9e720e0252c71575949a395832a817345f6827ad5a4fd305ac00a587195c5d8c8
   languageName: node
   linkType: hard
 
@@ -18335,6 +18398,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"rss@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "rss@npm:1.2.2"
+  dependencies:
+    mime-types: 2.1.13
+    xml: 1.0.1
+  checksum: 1e4b2216353343869a4983edb485fbafe1e29c58d848f9bd6acbfb9a8736576787fcd68b48c8f7ff09a832005c63c9d0c95075e66a20a542fd4f0c9b40b6837c
+  languageName: node
+  linkType: hard
+
 "run-async@npm:^2.2.0, run-async@npm:^2.4.0":
   version: 2.4.1
   resolution: "run-async@npm:2.4.1"
@@ -18635,6 +18708,7 @@ fsevents@~2.1.2:
     bs-platform: ^8.4.2
     date-fns: ^2.17.0
     gatsby: ^2.29.2
+    gatsby-plugin-feed: ^2.13.1
     gatsby-plugin-google-gtag: ^2.6.0
     gatsby-plugin-postcss: ^3.4.0
     gatsby-plugin-react-helmet: ^3.8.0
@@ -21864,6 +21938,13 @@ fsevents@~2.1.2:
     sax: ">=0.6.0"
     xmlbuilder: ~11.0.0
   checksum: 5e6e53955714a9d094c9f39ac7509706d136a3dae76684059019ca949e131775f69715715879df86b1a49519ffea3805ff2e930596e229c5f6228ce027e8a80e
+  languageName: node
+  linkType: hard
+
+"xml@npm:1.0.1":
+  version: 1.0.1
+  resolution: "xml@npm:1.0.1"
+  checksum: adde7652a6f6010d28079586e7f608d616138bcb6c44bbc9174292b5cc2fab09b351d6c5f009e9304df2e0030888198225dd2e9ccbf51b776c8928479bfea4cb
   languageName: node
   linkType: hard
 

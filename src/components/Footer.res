@@ -1,6 +1,13 @@
 open Belt.Option
 open Js.Nullable
 
+module ExternalLink = {
+  @react.component
+  let make = (~children, ~href) => {
+    <a href={href} target="_blank" rel="noopener noreferrer"> {children->React.string} </a>
+  }
+}
+
 %graphql(`
   query SiteMetadata {
     site {
@@ -20,8 +27,22 @@ let make = () => {
   <footer className="bg-gray-100">
     <div className="max-w-2xl mx-auto py-12 px-4 text-center">
       <img src="/logo.png" alt={meta.title->toOption->getExn} className="w-48 mb-6 m-auto" />
-      <p className="text-md"> {meta.description->toOption->getExn->React.string} </p>
-      <small> {`© 이현섭`->React.string} </small>
+      <p className="text-md mb-6"> {meta.description->toOption->getExn->React.string} </p>
+      <small className="block mb-2">
+        {`Powered by `->React.string}
+        <ExternalLink href="https://www.gatsbyjs.com/"> {`Gatsby`} </ExternalLink>
+        {`,  `->React.string}
+        {`Hosted by `->React.string}
+        <ExternalLink href="https://vercel.com/"> {`Vercel`} </ExternalLink>
+        {`.`->React.string}
+      </small>
+      <small className="block">
+        <ExternalLink href="https://github.com/HyunSeob"> {`© 이현섭`} </ExternalLink>
+        {`, `->React.string}
+        <ExternalLink href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">
+          {`All rights reserved.`}
+        </ExternalLink>
+      </small>
     </div>
   </footer>
 }
