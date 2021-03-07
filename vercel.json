@@ -1,16 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/resume",
+      "destination": "https://hyunseob.github.io/resume/"
+    },
+    {
       "source": "/resume/2015",
       "destination": "https://drive.google.com/file/d/1SOQC3UK_QyTOn3pkAD4AB9wze8mH4-vz/view?usp=sharing"
     },
     {
       "source": "/resume/2016",
       "destination": "https://drive.google.com/file/d/0ByOYtK4xeEcyTmYwQWJFblJ0THc/view?usp=sharing"
-    },
-    {
-      "source": "/resume",
-      "destination": "https://hyunseob.github.io/resume/"
     }
   ]
 }
