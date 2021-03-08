@@ -19,6 +19,14 @@
     {
       "source": "/s/great-engineer",
       "destination": "https://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/"
+    },
+    {
+      "source": "/s/great-engineer",
+      "destination": "https://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/"
+    },
+    {
+      "source": "/s/blog-for-dev",
+      "destination": "https://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/"
     }
   ]
 }
