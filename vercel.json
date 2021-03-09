@@ -27,6 +27,10 @@
     {
       "source": "/s/blog-for-dev",
       "destination": "https://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/"
+    },
+    {
+      "source": "/s/to-toss",
+      "destination": "https://www.slideshare.net/hyunseoblee7/99-134466978"
     }
   ]
 }
