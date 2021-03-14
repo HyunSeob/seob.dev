@@ -1,7 +1,5 @@
-<a href="https://seob.dev" target="_blank">
-  <h1 align="center">
-    <img width="240px" src="https://user-images.githubusercontent.com/6940487/111063662-4a18f100-84f3-11eb-80fe-eb46f70f0fa9.png" alt="seob.dev" >
-  </h1>
+<a href="https://seob.dev" target="_blank" style="display: block; text-align: center;" role="heading" aria-level="1">
+  <img width="240px" src="https://user-images.githubusercontent.com/6940487/111063662-4a18f100-84f3-11eb-80fe-eb46f70f0fa9.png" alt="seob.dev" >
 </a>
 
 
