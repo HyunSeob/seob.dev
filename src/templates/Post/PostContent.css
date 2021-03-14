@@ -137,16 +137,17 @@
       @apply relative;
       @apply pl-4;
 
-      &:not(:last-child) {
+      &:not(:last-of-type) {
         @apply mb-2;
       }
+    }
 
-      &:before {
-        @apply absolute;
-        @apply left-0;
-        @apply w-1;
-        @apply text-center;
-      }
+    & ul li:before,
+    & ol li:before {
+      @apply absolute;
+      @apply left-0;
+      @apply w-1;
+      @apply text-center;
     }
 
     & ul li:before {

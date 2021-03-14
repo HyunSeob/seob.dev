@@ -62,7 +62,6 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
       title={`${title} / seob.dev`}
       description={description}
       url={`https://seob.dev/posts/${pageContext.slug}/`}>
-      // <meta name="keywords" content="Year in review" />
       <meta property="article:published_time" content={createdAt} />
       <meta property="article:modified_time" content={updatedAt} />
     </SEO>

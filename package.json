@@ -1,8 +1,8 @@
 {
   "name": "seob.dev",
   "version": "0.0.0",
-  "description": "이현섭의 새로운 기술 블로그",
-  "main": "index.js",
+  "description": "HyunSeob's Engineering blog since 2021",
+  "main": "",
   "repository": "git@github.com:HyunSeob/seob.dev.git",
   "author": "HyunSeob <mail@hyunseob.me>",
   "license": "MIT",
