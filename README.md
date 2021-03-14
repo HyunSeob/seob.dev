@@ -10,5 +10,5 @@
 
 ## License
 
-[블로그 소스코드에 대한 라이센스](./LICENSE)
-[블로그 포스트에 대한 라이센스](./content/LICENSE.md)
+- [블로그 소스코드에 대한 라이센스](./LICENSE)
+- [블로그 포스트에 대한 라이센스](./content/LICENSE.md)
