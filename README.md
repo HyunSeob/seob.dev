@@ -1,7 +1,8 @@
-<a href="https://seob.dev" target="_blank" style="display: block; text-align: center;" role="heading" aria-level="1">
-  <img width="240px" src="https://user-images.githubusercontent.com/6940487/111063662-4a18f100-84f3-11eb-80fe-eb46f70f0fa9.png" alt="seob.dev" >
-</a>
-
+<h1 align="center">
+  <a href="https://seob.dev" target="_blank">
+    <img width="240px" src="https://user-images.githubusercontent.com/6940487/111063662-4a18f100-84f3-11eb-80fe-eb46f70f0fa9.png" alt="seob.dev" >
+  </a>
+</h1>
 
 "seob.dev" 는 이현섭의 새로운 기술 블로그입니다. 주로 프론트엔드 개발에 대한 내용을 다룹니다.
 
