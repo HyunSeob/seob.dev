@@ -37,7 +37,7 @@ let make = () => {
       <nav>
         <ul className="flex">
           <NavItem _to="/"> {`Posts`} </NavItem>
-          <ExternalItem _to="https://hyunseob.github.io/resume"> {`Resume`} </ExternalItem>
+          <ExternalItem _to="https://github.com/HyunSeob/seob.dev"> {`GitHub`} </ExternalItem>
         </ul>
       </nav>
     </div>
