@@ -5662,17 +5662,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clipboard@npm:^2.0.0":
-  version: 2.0.6
-  resolution: "clipboard@npm:2.0.6"
-  dependencies:
-    good-listener: ^1.2.2
-    select: ^1.1.2
-    tiny-emitter: ^2.0.0
-  checksum: 25e2e6b595f764ebb541dfda5c77051200567b5dd2de42ac6ab9681febe1256a977be450ab1d6f0d41554799106cc92e79e167797c8e8b8e88edcb0aec5b5dcb
-  languageName: node
-  linkType: hard
-
 "clipboardy@npm:^2.3.0":
   version: 2.3.0
   resolution: "clipboardy@npm:2.3.0"
@@ -7155,13 +7144,6 @@ __metadata:
   version: 1.0.0
   resolution: "delayed-stream@npm:1.0.0"
   checksum: d9dfb0a7c79fd308fada9db2cf29d1ff22047ceb50dd78f7e3c173567909b438f418259cb76a6d9c9f513e88ef41d3a14154f618741ec8368c3efeff616d0c9f
-  languageName: node
-  linkType: hard
-
-"delegate@npm:^3.1.2":
-  version: 3.2.0
-  resolution: "delegate@npm:3.2.0"
-  checksum: ccbbf29eb436719e4ffef06a1df2635a150f229f8ae549f4b6e118e940b17917e063c939541c6e23f38675d30acf424ecca9a8d1cca2a874d63fa0c257b0811f
   languageName: node
   linkType: hard
 
@@ -9778,20 +9760,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:^3.10.0":
-  version: 3.10.0
-  resolution: "gatsby-remark-prismjs@npm:3.10.0"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-    parse-numeric-range: ^0.0.2
-    unist-util-visit: ^1.4.1
-  peerDependencies:
-    gatsby: ^2.0.0
-    prismjs: ^1.15.0
-  checksum: c4c40648e8bc462d5b076c3ed8d9919bb698f318f15116accabf834fb051e9418e736cf1321dd58d65d711e85f378f3e72edeff77d6647fe18ee1ea45373634c
-  languageName: node
-  linkType: hard
-
 "gatsby-remark-responsive-iframe@npm:^2.8.0":
   version: 2.8.0
   resolution: "gatsby-remark-responsive-iframe@npm:2.8.0"
@@ -10392,15 +10360,6 @@ fsevents@~2.1.2:
     pify: ^2.0.0
     pinkie-promise: ^2.0.0
   checksum: 7acac933247f203624c502e6db54995d355ae2ce618be40a6a125c73bac9fa1bb775cf2b0959d92807605534f7b29cf711bc354febb8a6dc2ecbaa1cbf59efa5
-  languageName: node
-  linkType: hard
-
-"good-listener@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "good-listener@npm:1.2.2"
-  dependencies:
-    delegate: ^3.1.2
-  checksum: 640a1627e528ceb3337595a8020f44d09455f284c18c765eaf9ce5dcdf1799810e7b11ca2b61582a5a4db20aad0b7e6b820235864822d84df541d74383bcd01c
   languageName: node
   linkType: hard
 
@@ -15664,13 +15623,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"parse-numeric-range@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "parse-numeric-range@npm:0.0.2"
-  checksum: a058c6ef46f916b1b76dadf64ee7c7b271228ec607e276d1a927f13c5ee4356f6b3f8771910ac6741e3fc612d429bda9411c7d30c9ddf6c0416915a04a66b6ca
-  languageName: node
-  linkType: hard
-
 "parse-passwd@npm:^1.0.0":
   version: 1.0.0
   resolution: "parse-passwd@npm:1.0.0"
@@ -17075,18 +17027,6 @@ fsevents@~2.1.2:
   version: 1.0.3
   resolution: "pretty-hrtime@npm:1.0.3"
   checksum: efb9d4987ec2ba55a6b59c8eab4933ba5cd3c9311b9360f7ec491f1aad643ec8b533c8209170433de93bbc71e66b46f2a7035b991a1826141b128b73949b5577
-  languageName: node
-  linkType: hard
-
-"prismjs@npm:^1.22.0":
-  version: 1.22.0
-  resolution: "prismjs@npm:1.22.0"
-  dependencies:
-    clipboard: ^2.0.0
-  dependenciesMeta:
-    clipboard:
-      optional: true
-  checksum: c9370f1f6a8c419cf7d712527dede91de33080ecdd9265cf6a7f0938cfe75e954dae4a02915ac8b9df4485f0c9fbab94a7babfedb7076a83ed57b9b132255e34
   languageName: node
   linkType: hard
 
@@ -18594,13 +18534,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"select@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "select@npm:1.1.2"
-  checksum: 66be63b7cf0973af48cebcca47909d0ba703bb7f01373f9ebf19880dc8fe9c97f41e2ebdefee144f60bbf416cafbf77dfb98cd1776e62d7afc336b843f1009b1
-  languageName: node
-  linkType: hard
-
 "selfsigned@npm:^1.10.7":
   version: 1.10.8
   resolution: "selfsigned@npm:1.10.8"
@@ -18720,7 +18653,6 @@ fsevents@~2.1.2:
     gatsby-remark-copy-linked-files: ^2.8.0
     gatsby-remark-external-links: ^0.0.4
     gatsby-remark-images: ^3.8.1
-    gatsby-remark-prismjs: ^3.10.0
     gatsby-remark-responsive-iframe: ^2.8.0
     gatsby-remark-vscode: ^3.2.0
     gatsby-source-filesystem: ^2.8.1
@@ -18731,7 +18663,6 @@ fsevents@~2.1.2:
     postcss: latest
     postcss-import: ^14.0.0
     postcss-preset-env: ^6.7.0
-    prismjs: ^1.22.0
     react: ^17.0.1
     react-dom: ^17.0.1
     react-helmet: ^6.1.0
@@ -20302,13 +20233,6 @@ fsevents@~2.1.2:
   version: 0.3.0
   resolution: "timsort@npm:0.3.0"
   checksum: d8300c3ecf1a3751413de82b04ad283b461ab6fb1041820c825d13b4ae74526e2101ab5fb84c57a0c6e1f4d7f67173b5d8754ed8bb7447c6a9ce1db8562eb82c
-  languageName: node
-  linkType: hard
-
-"tiny-emitter@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "tiny-emitter@npm:2.1.0"
-  checksum: 0055509c72e5fe35d6ab66fa6339342e0f29129e77ed2086e475fdf80be43a8651f2517be76513b46a042c8356396f4da5a35e2e23457252176808d5a892036a
   languageName: node
   linkType: hard
 

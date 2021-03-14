@@ -44,7 +44,6 @@ module.exports = {
               extensions: ["rescript-vscode", "ayu"],
             },
           },
-          "gatsby-remark-prismjs",
           `gatsby-remark-copy-linked-files`,
           "gatsby-remark-autolink-headers",
           `gatsby-remark-external-links`,
