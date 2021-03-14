@@ -15,4 +15,3 @@ let make = (~html) => {
     dangerouslySetInnerHTML={"__html": html}
   />;
 };
- 

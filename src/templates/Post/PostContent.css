@@ -161,7 +161,7 @@
         counter-increment: ol-counter;
         @apply pl-6;
 
-        &:before {
+        &::before {
           content: counter(ol-counter) ". ";
         }
       }
