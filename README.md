@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://seob.dev" target="_blank">
-    <img width="240px" src="https://user-images.githubusercontent.com/6940487/111063662-4a18f100-84f3-11eb-80fe-eb46f70f0fa9.png" alt="seob.dev" >
+    <img width="240px" src="https://user-images.githubusercontent.com/6940487/111909971-b91db900-8aa2-11eb-9463-170e80a7fdf4.png" alt="seob.dev" >
   </a>
 </h1>
 
