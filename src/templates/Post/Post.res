@@ -25,6 +25,7 @@ open ReasonDateFns
       html
       frontmatter {
         title
+        description
         createdAt
         updatedAt
       }
@@ -52,7 +53,11 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
   let social = siteMetadata.social->getExn
 
   let title = matter.title->getExn
-  let description = markdown.excerpt->getExn
+  let description = if Js.Nullable.toOption(matter.description) != None {
+    matter.description->getExn
+  } else {
+    markdown.excerpt->getExn
+  }
 
   let createdAt = matter.createdAt->flatMap(decodeString)->getExn
   let updatedAt = matter.updatedAt->flatMap(decodeString)->getExn
