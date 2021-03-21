@@ -24,7 +24,10 @@
         @apply -left-4;
         @apply h-full;
         @apply w-1.5;
-        @apply bg-green-400;
+        @apply bg-gradient-to-b;
+        @apply from-green-400;
+        @apply to-blue-400;
+
         @apply rounded-sm;
 
         @screen md {
@@ -60,14 +63,23 @@
       @apply text-base;
     }
 
-    & a {
-      @apply inline-block;
-      @apply text-blue-600;
-      @apply underline;
-      @apply transition-colors;
+    & a:not(.before) {
+      @apply focus:ring;
+      @apply focus:ring-yellow-500;
+
+      box-decoration-break: clone;
+
+      transition-property: background-size;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+
+      background-image: linear-gradient(to right, #bfdbfe, #bfdbfe);
+      background-size: 100% 30%;
+      background-repeat: no-repeat;
+      background-position: 0 bottom;
 
       &:hover {
-        @apply text-blue-400;
+        background-size: 100% 50%;
       }
     }
 

@@ -26,7 +26,7 @@ let make = () => {
 
   <footer className="bg-gray-100">
     <div className="max-w-2xl mx-auto py-12 px-4 text-center">
-      <img src="/logo.png" alt={meta.title->toOption->getExn} className="w-48 mb-6 m-auto" />
+      <Logo className="w-48 mb-6 m-auto" />
       <p className="text-md mb-6"> {meta.description->toOption->getExn->React.string} </p>
       <small className="block mb-2">
         {`Powered by `->React.string}
