@@ -67,16 +67,17 @@
       @apply focus:ring;
       @apply focus:ring-yellow-500;
 
-      box-decoration-break: clone;
+      @apply break-words;
 
       transition-property: background-size;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 150ms;
 
-      background-image: linear-gradient(to right, #bfdbfe, #bfdbfe);
+      background-image: linear-gradient(to bottom, #bfdbfe, #bfdbfe);
       background-size: 100% 30%;
-      background-repeat: no-repeat;
       background-position: 0 bottom;
+
+      @apply bg-no-repeat;
 
       &:hover {
         background-size: 100% 50%;
