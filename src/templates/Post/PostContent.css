@@ -24,7 +24,10 @@
         @apply -left-4;
         @apply h-full;
         @apply w-1.5;
-        @apply bg-green-400;
+        @apply bg-gradient-to-b;
+        @apply from-green-400;
+        @apply to-blue-400;
+
         @apply rounded-sm;
 
         @screen md {
