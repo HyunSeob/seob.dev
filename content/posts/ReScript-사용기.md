@@ -2,8 +2,8 @@
 title: ReScript 사용기
 tags:
   - ReScript
-createdAt: 2020-02-21 17:39:00+09:00
-updatedAt: 2020-02-21 17:39:00+09:00
+createdAt: 2021-02-21 17:39:00+09:00
+updatedAt: 2021-02-21 17:39:00+09:00
 ---
 
 # ReScript 소개
