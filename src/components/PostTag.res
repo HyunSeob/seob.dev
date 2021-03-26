@@ -4,17 +4,15 @@ let make = (~children) => {
     className={Js.Array.joinWith(
       ` `,
       [
+        `inline-block`,
         `font-bold`,
         `text-sm`,
         `bg-yellow-400`,
         `rounded-lg`,
-        `py-0.5`,
-        `px-1.5`,
-        %css(`
-          & + & {
-            margin-left: 8px;
-          }
-        `),
+        `py-1`,
+        `px-2`,
+        `mr-2`,
+        `last:m-0`,
       ],
     )}>
     {children->React.string}

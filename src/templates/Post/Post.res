@@ -75,7 +75,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
     <NavigationBar />
     <article className="container mx-auto py-16 px-4">
       <PostHeading> {title} </PostHeading>
-      <div className="flex flex-col md:flex-row max-w-2xl mx-auto pt-0 md:pt-4">
+      <div className="flex flex-col md:flex-row max-w-2xl mx-auto pt-4">
         <PostStat
           title={`마지막 업데이트`}
           value={<time dateTime=updatedAt>
@@ -98,8 +98,9 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
           </a>}
         />
       </div>
+      <Divider className="mt-24" />
       <PostContent html={markdown.html->getExn} />
-      <hr className="max-w-2xl mx-auto" />
+      <Divider className="mt-16" />
       <section className="max-w-2xl mx-auto pt-12">
         <h4 className="text-gray-900 text-xl md:text-2xl font-bold mb-4">
           {`글쓴이`->React.string}
