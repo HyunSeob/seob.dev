@@ -5,6 +5,18 @@ __metadata:
   version: 4
   cacheKey: 7
 
+"@ahrefs/bs-emotion@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@ahrefs/bs-emotion@npm:2.0.0"
+  dependencies:
+    "@minima.app/re-css": 1.0.1
+    emotion: 9.2.12
+  peerDependencies:
+    bs-platform: ^7.0.1
+  checksum: 1ab54c46c6386ad2133c7a1938d15fd60dcf6cc3b8628d923d17f0663613d8940efbae3f9283b6d3046d77444d059983ce1f8a4e83a61d1295c994943de53587
+  languageName: node
+  linkType: hard
+
 "@ardatan/aggregate-error@npm:0.0.6":
   version: 0.0.6
   resolution: "@ardatan/aggregate-error@npm:0.0.6"
@@ -268,7 +280,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.0.0, @babel/helper-module-imports@npm:^7.0.0-beta.49, @babel/helper-module-imports@npm:^7.12.1, @babel/helper-module-imports@npm:^7.12.5":
+"@babel/helper-module-imports@npm:^7.0.0":
+  version: 7.13.12
+  resolution: "@babel/helper-module-imports@npm:7.13.12"
+  dependencies:
+    "@babel/types": ^7.13.12
+  checksum: 4d1d3364bec0820e50c782b5a5c81e7987c260c14772bc594ca8dbfdb3b6e43bd9b4e5071fd2a5f777c822dc7440781fa904f643e2069755db9ba5033cb2beac
+  languageName: node
+  linkType: hard
+
+"@babel/helper-module-imports@npm:^7.0.0-beta.49, @babel/helper-module-imports@npm:^7.12.1, @babel/helper-module-imports@npm:^7.12.5":
   version: 7.12.5
   resolution: "@babel/helper-module-imports@npm:7.12.5"
   dependencies:
@@ -1478,10 +1499,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.13.12":
+  version: 7.13.12
+  resolution: "@babel/types@npm:7.13.12"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.12.11
+    lodash: ^4.17.19
+    to-fast-properties: ^2.0.0
+  checksum: 154392625ea7b7c550be1ebf624b9cfed394d11bf8b7cb39b0ec874a84313d26dc708cca62b18de9901bce19a9a187f0d4834e8cf365ad2fc9357c96c13923f7
+  languageName: node
+  linkType: hard
+
 "@csstools/convert-colors@npm:^1.4.0":
   version: 1.4.0
   resolution: "@csstools/convert-colors@npm:1.4.0"
   checksum: c8c8e6b5b3c2ae7e2c4a0ff376b79e09c8e350f3a3973eee8d42372f3e49d41c43172087c426e33fefdb9057de8a6f23cabf31e6201adce3f78d4b25e1722b50
+  languageName: node
+  linkType: hard
+
+"@davesnx/styled-ppx@npm:^0.20.0":
+  version: 0.20.0
+  resolution: "@davesnx/styled-ppx@npm:0.20.0"
+  bin:
+    styled-ppx: styled-ppx.exe
+  checksum: 20093d2afcfab3e784d6608f6be552a3d428f706654986eae76938c7fdb86727f80dcb2923e3acc1d580c9fe69be5739bcd3f6f142f20ad809b531f908db2787
+  languageName: node
+  linkType: hard
+
+"@emotion/babel-utils@npm:^0.6.4":
+  version: 0.6.10
+  resolution: "@emotion/babel-utils@npm:0.6.10"
+  dependencies:
+    "@emotion/hash": ^0.6.6
+    "@emotion/memoize": ^0.6.6
+    "@emotion/serialize": ^0.9.1
+    convert-source-map: ^1.5.1
+    find-root: ^1.1.0
+    source-map: ^0.7.2
+  checksum: 6f2ea2b69fc2d0e22f6e2dce9baa4cca8156c4e0568c2c35e874ee65e763ca7d18cc73a079cd30a38db7d1a02ac6bd5c10d3a941fe1e56dbb23395f69d712868
   languageName: node
   linkType: hard
 
@@ -1504,10 +1559,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/hash@npm:^0.6.2, @emotion/hash@npm:^0.6.6":
+  version: 0.6.6
+  resolution: "@emotion/hash@npm:0.6.6"
+  checksum: 01a9b26bc0315409e00ee7b57ec5794bae23c3477f70062c525da610e871d1992ad1aa8e81a1f9106ac8ba995f834c6933e35b589aba535ad42ba5916536527e
+  languageName: node
+  linkType: hard
+
 "@emotion/memoize@npm:0.7.4":
   version: 0.7.4
   resolution: "@emotion/memoize@npm:0.7.4"
   checksum: 874123a94c89963dda3438d1ea7f7c17fa670d965610eefaa49e0dbf47cccee6f6108e04175867d7e485d2c04096a98bba5a4bef2606b3bf2070637327ebe3ff
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:^0.6.1, @emotion/memoize@npm:^0.6.6":
+  version: 0.6.6
+  resolution: "@emotion/memoize@npm:0.6.6"
+  checksum: 9fddecbde340ae6ef0f0c29f28ad2ffceb0408c24b96c39eeb111824abf6b90b6bb8966479c4200fbed41a3c42a7aba7816e42ce87168a0f32db35c1e94f46af
   languageName: node
   linkType: hard
 
@@ -1521,6 +1590,18 @@ __metadata:
     "@emotion/utils": 0.11.3
     csstype: ^2.5.7
   checksum: b7d9a94a039ea5e86b0daccc29f0c40fbbda7004b1fde9ee14be38463c3aaabdd027b38c5c0e580f66883fb6e3b49160292843b0e14efe49e662a520c38f4c15
+  languageName: node
+  linkType: hard
+
+"@emotion/serialize@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "@emotion/serialize@npm:0.9.1"
+  dependencies:
+    "@emotion/hash": ^0.6.6
+    "@emotion/memoize": ^0.6.6
+    "@emotion/unitless": ^0.6.7
+    "@emotion/utils": ^0.8.2
+  checksum: b54e82b27b018ed073ad4e9dd949e55dc5bf06ddf95fdf4edc3ee7bf567104c4e1a3685ebb5aa4527404a819b968e1ecced1415a112b95aa4697267058cdb7bb
   languageName: node
   linkType: hard
 
@@ -1538,6 +1619,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/stylis@npm:^0.7.0":
+  version: 0.7.1
+  resolution: "@emotion/stylis@npm:0.7.1"
+  checksum: 62385eeb5db7a2dc38ae3a0095603906293c0aec6cb46c05e2d14bed48e25ab5270a47a7e3dc22660d04505c8c6570ad4e95aed3baf16276b9cda957394312b2
+  languageName: node
+  linkType: hard
+
 "@emotion/unitless@npm:0.7.5":
   version: 0.7.5
   resolution: "@emotion/unitless@npm:0.7.5"
@@ -1545,10 +1633,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/unitless@npm:^0.6.2, @emotion/unitless@npm:^0.6.7":
+  version: 0.6.7
+  resolution: "@emotion/unitless@npm:0.6.7"
+  checksum: dbe672c7da6f62fc273d634083ac1b5365db2027dae526d12280ccd0425553ed1343857f683e0e091d3df97f57b2d31623f1a96ce329dce618a259cc6f2fad0c
+  languageName: node
+  linkType: hard
+
 "@emotion/utils@npm:0.11.3":
   version: 0.11.3
   resolution: "@emotion/utils@npm:0.11.3"
   checksum: b5c3a22204a878eafa8deb362493b48c3f3a7f7ec3e5a18634d14aa8d5c9d8274db0a9d0206b3c124fa170640880fbcda987971699a1cf69355f2cec994da487
+  languageName: node
+  linkType: hard
+
+"@emotion/utils@npm:^0.8.2":
+  version: 0.8.2
+  resolution: "@emotion/utils@npm:0.8.2"
+  checksum: ff76f5deb0f241a3d9b600c92c3fd727c2941976431d5920da1da6e3c5f021fe932708479f369820ff2a3585d578d5b6b8ff1ea6c092173bb48f3c4eca1304eb
   languageName: node
   linkType: hard
 
@@ -2670,6 +2772,13 @@ __metadata:
   version: 1.0.10
   resolution: "@mikaelkristiansson/domready@npm:1.0.10"
   checksum: 8da7344e3c1326885c40e2853eecd8e5e53c44e40b13c9d71fc5facf9ca6b6f9fcb44d6de43b81d4a8ab24deb9ab0f03eb17a3765be5f1d37c9df57410bc20c2
+  languageName: node
+  linkType: hard
+
+"@minima.app/re-css@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@minima.app/re-css@npm:1.0.1"
+  checksum: bdda1115a892d8475e374483e0b10af4382a14dc44161a93af6d49639082c0fb85036a35c178609c956dd4a532cb9e6de1e769bd549ad3a4626f7586313a1c67
   languageName: node
   linkType: hard
 
@@ -4357,8 +4466,8 @@ __metadata:
   linkType: hard
 
 "babel-plugin-emotion@npm:^10.0.27":
-  version: 10.0.33
-  resolution: "babel-plugin-emotion@npm:10.0.33"
+  version: 10.2.2
+  resolution: "babel-plugin-emotion@npm:10.2.2"
   dependencies:
     "@babel/helper-module-imports": ^7.0.0
     "@emotion/hash": 0.8.0
@@ -4370,7 +4479,27 @@ __metadata:
     escape-string-regexp: ^1.0.5
     find-root: ^1.1.0
     source-map: ^0.5.7
-  checksum: ecbf7cbcae0afb53bc8fbfb88e54b32eb37cb021eefbf8f878ddf573dfabfc34033e611bba01c4512b0f678372dc85a0c5a1ae41864a894266844ccb08864564
+  checksum: 6def612598c8dbb74942271b8cb406eccad0d1a6b4ec1180f8205f5e92362b3e200bc566fdec58e37076a6a602e95c226fc9d28ed6a558fff748637cb214e3c9
+  languageName: node
+  linkType: hard
+
+"babel-plugin-emotion@npm:^9.2.11":
+  version: 9.2.11
+  resolution: "babel-plugin-emotion@npm:9.2.11"
+  dependencies:
+    "@babel/helper-module-imports": ^7.0.0
+    "@emotion/babel-utils": ^0.6.4
+    "@emotion/hash": ^0.6.2
+    "@emotion/memoize": ^0.6.1
+    "@emotion/stylis": ^0.7.0
+    babel-plugin-macros: ^2.0.0
+    babel-plugin-syntax-jsx: ^6.18.0
+    convert-source-map: ^1.5.0
+    find-root: ^1.1.0
+    mkdirp: ^0.5.1
+    source-map: ^0.5.7
+    touch: ^2.0.1
+  checksum: dd1b5a4045ce4bd920dac854ed02e77b966028cee8f1b35e6112b21848a642cd32ee0005f53c860dd141f1f0d4e326bf53894b48f87da387cf2accb58a1b55cf
   languageName: node
   linkType: hard
 
@@ -4903,20 +5032,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bs-css-emotion@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "bs-css-emotion@npm:2.2.0"
+"bs-css-emotion@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "bs-css-emotion@npm:2.4.1"
   dependencies:
-    bs-css: 13.2.0
-    emotion: ^10.0.7
-  checksum: fe0ddefb9b556acf64e1c445a68f22359c7d00f0f60d68f74e21de5677f9bcd4ce5dd355f998095068d90d4fa50e5bdb34045249f90399def754cf46312a140c
+    bs-css: 13.4.0
+    emotion: ^10.0.0
+  checksum: 4393808b7c0923a319590bfb43427910ae4612c32a635db361ca30abdb44ea5f5f7d83928d4cddd08f73ad8aad884c7ea768b154ca4d125027b9229f7aba6779
   languageName: node
   linkType: hard
 
-"bs-css@npm:13.2.0":
-  version: 13.2.0
-  resolution: "bs-css@npm:13.2.0"
-  checksum: dd949d46de2c5254da6433c13b7d1ef99f7413a2cd72b0e52a6b7bfc3cd23a510c1ed1ab3d6e976f361f16c8e6cd8c0eb4dbaf2e95cd52c71514297789c270b0
+"bs-css@npm:13.4.0":
+  version: 13.4.0
+  resolution: "bs-css@npm:13.4.0"
+  checksum: f752943b2759f1b2436ed0bfd97d33ce5eb0417931b4e091945b4b228a2ad49e15af55ed3348ca2a697b6f18d0c4e6a18da4d892acb2085035e0376258a3fdc9
+  languageName: node
+  linkType: hard
+
+"bs-css@npm:^13.4.1":
+  version: 13.4.1
+  resolution: "bs-css@npm:13.4.1"
+  checksum: ac3d060b15a9d4693a4aa188c03547b38b1b4a7740c0b519eeb75274c3df302b64157959b213359b173897b9a8d1864fd32b30c2d1137a46d467b518ccd6cea4
   languageName: node
   linkType: hard
 
@@ -6085,7 +6221,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert-source-map@npm:^1.1.0, convert-source-map@npm:^1.5.0, convert-source-map@npm:^1.7.0":
+"convert-source-map@npm:^1.1.0, convert-source-map@npm:^1.5.0, convert-source-map@npm:^1.5.1, convert-source-map@npm:^1.7.0":
   version: 1.7.0
   resolution: "convert-source-map@npm:1.7.0"
   dependencies:
@@ -6268,6 +6404,21 @@ __metadata:
     "@emotion/sheet": 0.9.4
     "@emotion/utils": 0.11.3
   checksum: 59581a54fe4f6da6bcbae502df852f0cf0dc6f002aaf416701266a4d944e63d9e33ac0d733b35d8a6265f4052dfdba67222ae341e8f9382afb2e40ed03831053
+  languageName: node
+  linkType: hard
+
+"create-emotion@npm:^9.2.12":
+  version: 9.2.12
+  resolution: "create-emotion@npm:9.2.12"
+  dependencies:
+    "@emotion/hash": ^0.6.2
+    "@emotion/memoize": ^0.6.1
+    "@emotion/stylis": ^0.7.0
+    "@emotion/unitless": ^0.6.2
+    csstype: ^2.5.2
+    stylis: ^3.5.0
+    stylis-rule-sheet: ^0.0.10
+  checksum: bf2ae98cfb20985e36c058433610fafa85e5c0daf20a1446f3800016a5084ec2e92be18d0eb5530769b3090f6c943413503c7da1d633921f54403ad139d38313
   languageName: node
   linkType: hard
 
@@ -6720,10 +6871,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^2.5.7":
-  version: 2.6.14
-  resolution: "csstype@npm:2.6.14"
-  checksum: 9abe447b28534cc45304fca19a26d373c5bb8e9b18cedbb84330862937d102c9d8cc47f65d233f723c8512804e9d52b81d6fc57c23c6a4d5420f281827d73b03
+"csstype@npm:^2.5.2, csstype@npm:^2.5.7":
+  version: 2.6.16
+  resolution: "csstype@npm:2.6.16"
+  checksum: 857b0d414e13a550c7dd2b2a94f23ca63c8d5c10dc6e6020e7ca5afebd143b5e2926199cced1c3801a1e9eceb7d94b65edc11a521cdb3b67f61de757facfbff3
   languageName: node
   linkType: hard
 
@@ -7699,7 +7850,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emotion@npm:^10.0.7":
+"emotion@npm:9.2.12":
+  version: 9.2.12
+  resolution: "emotion@npm:9.2.12"
+  dependencies:
+    babel-plugin-emotion: ^9.2.11
+    create-emotion: ^9.2.12
+  checksum: c698738f6294ca09882d935c2e9b5432a4e08053e58073a275384cf73b44e7acf5f460ff987a625a31c770c5d6d2aacbc21e821c1a7ff31d93adf646c73b2adc
+  languageName: node
+  linkType: hard
+
+"emotion@npm:^10.0.0":
   version: 10.0.27
   resolution: "emotion@npm:10.0.27"
   dependencies:
@@ -14591,6 +14752,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"nopt@npm:~1.0.10":
+  version: 1.0.10
+  resolution: "nopt@npm:1.0.10"
+  dependencies:
+    abbrev: 1
+  bin:
+    nopt: ./bin/nopt.js
+  checksum: fb74743e70abbabfdfa828be4b85ba7261ebdff439a9d5edc7a86871ddc45d4741e0724df91dff0a274ea4d3b6ef458c3c35a14ca97e53a6fe24264ff1d45a66
+  languageName: node
+  linkType: hard
+
 "normalize-package-data@npm:^2.3.2, normalize-package-data@npm:^2.3.4":
   version: 2.5.0
   resolution: "normalize-package-data@npm:2.5.0"
@@ -18631,13 +18803,16 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "seob.dev@workspace:."
   dependencies:
+    "@ahrefs/bs-emotion": ^2.0.0
+    "@davesnx/styled-ppx": ^0.20.0
     "@graphql-cli/codegen": ^1.17.18
     "@graphql-codegen/introspection": ^1.18.1
     "@moox/bs-react-helmet": ^3.0.0
     "@reasonml-community/graphql-ppx": ^1.0.1
     autoprefixer: latest
     ayu: "github:ayu-theme/vscode-ayu"
-    bs-css-emotion: ^2.2.0
+    bs-css: ^13.4.1
+    bs-css-emotion: ^2.4.1
     bs-platform: ^8.4.2
     date-fns: ^2.17.0
     gatsby: ^2.29.2
@@ -19230,7 +19405,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"source-map@npm:0.7.3, source-map@npm:^0.7.3":
+"source-map@npm:0.7.3, source-map@npm:^0.7.2, source-map@npm:^0.7.3":
   version: 0.7.3
   resolution: "source-map@npm:0.7.3"
   checksum: 351ce26ffa1ebf203660c0d70d7566c81e65d2d994d1c2d94da140808e02da34961673ce12ecea9b40797b96fbeb8c70bf71a4ad9f779f1a4fdbba75530bb386
@@ -19869,6 +20044,22 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"stylis-rule-sheet@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "stylis-rule-sheet@npm:0.0.10"
+  peerDependencies:
+    stylis: ^3.5.0
+  checksum: 89c5e8a72bf0dab4882464bd1e23db100956217d2851b6ff2c7a9d72274df68072528c82f5d7cda92d91aa455095d8adc2b97ff0f88b3a707fcbcdc485df970c
+  languageName: node
+  linkType: hard
+
+"stylis@npm:^3.5.0":
+  version: 3.5.4
+  resolution: "stylis@npm:3.5.4"
+  checksum: 356e2352b1800595c46f3969c6afdce82ab3e5d668bbb6733e68a4968fa2190208cccd74129b7456e80ade3d321beeaff7c2c69ab90288127221062f90dcff99
+  languageName: node
+  linkType: hard
+
 "sudo-prompt@npm:^8.2.0":
   version: 8.2.5
   resolution: "sudo-prompt@npm:8.2.5"
@@ -20357,6 +20548,17 @@ fsevents@~2.1.2:
     "@tokenizer/token": ^0.1.0
     ieee754: ^1.1.13
   checksum: 1239d4c6375aad8536ada2caa7e8bf1776e7554bbb47a2f8b346280322b1f480691fcd393071633969fae7b351fd1e7c5c4a1c6463321a184ca88a277af92e0e
+  languageName: node
+  linkType: hard
+
+"touch@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "touch@npm:2.0.2"
+  dependencies:
+    nopt: ~1.0.10
+  bin:
+    nodetouch: ./bin/nodetouch.js
+  checksum: 1762ad09be615f10464fdc8b1fea145aae021d74f49e88981bf323823324a82c4669e115d80ca29bd0876124fa271df82af2512f3424fe9157bbc8a931b1a36f
   languageName: node
   linkType: hard
 
