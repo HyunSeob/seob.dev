@@ -28,6 +28,7 @@ open ReasonDateFns
         description
         createdAt
         updatedAt
+        tags
       }
     }
   }
@@ -61,6 +62,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
 
   let createdAt = matter.createdAt->flatMap(decodeString)->getExn
   let updatedAt = matter.updatedAt->flatMap(decodeString)->getExn
+  let tags = matter.tags->getExn
 
   <>
     <SEO
@@ -73,17 +75,29 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
     <NavigationBar />
     <article className="container mx-auto py-16 px-4">
       <PostHeading> {title} </PostHeading>
-      <span className="block text-sm text-right max-w-2xl mx-auto italic text-gray-500 mt-8">
-        {Js.Date.fromString(updatedAt)
-        |> DateFns.formatWithOptions(
-          DateFns.formatOptions(~locale=DateFns.Locales.ko, ()),
-          `yyyy년 M월 d일`,
-        )
-        |> React.string}
-        <time dateTime=updatedAt>
-          {`에 마지막으로 업데이트 되었습니다.`->React.string}
-        </time>
-      </span>
+      <div className="flex flex-col md:flex-row max-w-2xl mx-auto pt-0 md:pt-4">
+        <PostStat
+          title={`마지막 업데이트`}
+          value={<time dateTime=updatedAt>
+            {Js.Date.fromString(updatedAt)
+            |> DateFns.formatWithOptions(
+              DateFns.formatOptions(~locale=DateFns.Locales.ko, ()),
+              `yyyy년 M월 d일`,
+            )
+            |> React.string}
+          </time>}
+        />
+        <PostStat
+          title={`태그`}
+          value={tags->Belt.Array.map(tag => <PostTag> {tag->getExn} </PostTag>)->React.array}
+        />
+        <PostStat
+          title={`글쓴이`}
+          value={<a href={`https://twitter.com/${social.twitter->getExn}`} target="_blank">
+            {`이현섭`->React.string}
+          </a>}
+        />
+      </div>
       <PostContent html={markdown.html->getExn} />
       <hr className="max-w-2xl mx-auto" />
       <section className="max-w-2xl mx-auto pt-12">
