@@ -12,7 +12,7 @@ updatedAt: 2021-02-21 17:39:00+09:00
 
 ## Reason
 
-Reason은 React를 만든 [Jordan Walke](https://twitter.com/jordwalke)라는 분이 만든 언어입니다. OCaml이라는 강력한 타입시스템을 지닌 함수형 프로그래밍 언어를 기반으로 합니다. OCaml이 비교적 대중적인 JavaScript나 C 기반 언어의 개발자에게는 문법이 생소하고 어렵다보니 개발자도 친숙하게 사용할 수 있는 언어로 디자인했다고 공식문서에서 설명하고 있습니다.
+Reason은 React를 만든 [Jordan Walke](https://twitter.com/jordwalke)가 만든 언어입니다. OCaml이라는 강력한 타입시스템을 지닌 함수형 프로그래밍 언어를 기반으로 합니다. OCaml이 비교적 대중적인 JavaScript나 C 기반 언어의 개발자에게는 문법이 생소하고 어렵다보니 개발자도 친숙하게 사용할 수 있는 언어로 디자인했다고 공식문서에서 설명하고 있습니다.
 
 후술할 BuckleScript를 이용해서 JavaScript로 컴파일 할 수도 있지만, Go나 Rust처럼 네이티브 환경에서 실행가능한 바이너리로도 만들 수 있다고 합니다.
 

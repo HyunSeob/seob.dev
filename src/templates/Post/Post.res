@@ -93,9 +93,9 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
         />
         <PostStat
           title={`글쓴이`}
-          value={<a href={`https://twitter.com/${social.twitter->getExn}`} target="_blank">
+          value={<ExternalLink href={`https://twitter.com/${social.twitter->getExn}`}>
             {`이현섭`->React.string}
-          </a>}
+          </ExternalLink>}
         />
       </div>
       <Divider className="mt-24" />
@@ -110,7 +110,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
             src="https://ko.gravatar.com/userimage/99798884/1e93a7577245566cc5a088b05f461ca2.png"
             alt=""
             ariaHidden={true}
-            className="rounded-full h-12 w-12 md:h-20 md:w-20"
+            className="rounded-full h-12 w-12"
           />
           <div className="pl-4">
             <div className="flex text-gray-900 text-md md:text-lg">
@@ -119,26 +119,15 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
               <span> {author.summary->getExn->React.string} </span>
             </div>
             <div className="flex text-gray-700 text-sm md:text-md">
-              <a
-                href={`https://github.com/${social.github->getExn}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-2">
+              <ExternalLink href={`https://github.com/${social.github->getExn}`} className="mr-2">
                 {`GitHub`->React.string}
-              </a>
-              <a
-                href={`https://twitter.com/${social.twitter->getExn}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-2">
+              </ExternalLink>
+              <ExternalLink href={`https://twitter.com/${social.twitter->getExn}`} className="mr-2">
                 {`Twitter`->React.string}
-              </a>
-              <a
-                href={`https://www.facebook.com/${social.facebook->getExn}`}
-                target="_blank"
-                rel="noopener noreferrer">
+              </ExternalLink>
+              <ExternalLink href={`https://www.facebook.com/${social.facebook->getExn}`}>
                 {`Facebook`->React.string}
-              </a>
+              </ExternalLink>
             </div>
           </div>
         </div>
