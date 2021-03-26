@@ -1,13 +1,6 @@
 open Belt.Option
 open Js.Nullable
 
-module ExternalLink = {
-  @react.component
-  let make = (~children, ~href) => {
-    <a href={href} target="_blank" rel="noopener noreferrer"> {children->React.string} </a>
-  }
-}
-
 %graphql(`
   query SiteMetadata {
     site {
@@ -30,17 +23,19 @@ let make = () => {
       <p className="text-md mb-6"> {meta.description->toOption->getExn->React.string} </p>
       <small className="block mb-2">
         {`Powered by `->React.string}
-        <ExternalLink href="https://www.gatsbyjs.com/"> {`Gatsby`} </ExternalLink>
+        <ExternalLink href="https://www.gatsbyjs.com/"> {`Gatsby`->React.string} </ExternalLink>
         {`,  `->React.string}
         {`Hosted by `->React.string}
-        <ExternalLink href="https://vercel.com/"> {`Vercel`} </ExternalLink>
+        <ExternalLink href="https://vercel.com/"> {`Vercel`->React.string} </ExternalLink>
         {`.`->React.string}
       </small>
       <small className="block">
-        <ExternalLink href="https://github.com/HyunSeob"> {`© 이현섭`} </ExternalLink>
+        <ExternalLink href="https://github.com/HyunSeob">
+          {`© 이현섭`->React.string}
+        </ExternalLink>
         {`, `->React.string}
         <ExternalLink href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">
-          {`All rights reserved.`}
+          {`All rights reserved.`->React.string}
         </ExternalLink>
       </small>
     </div>
