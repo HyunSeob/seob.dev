@@ -4,6 +4,10 @@
   }
 
   .post-content {
+    & > *:first-child {
+      @apply mt-0;
+    }
+
     & > blockquote {
       @apply text-xl;
       @apply italic;
@@ -64,7 +68,7 @@
       @apply text-base;
     }
 
-    & a:not(.before) {
+    & a:not(.before):not(.gatsby-resp-image-link) {
       @apply focus:ring;
       @apply focus:ring-yellow-500;
 
@@ -169,6 +173,13 @@
           content: counter(ol-counter) ". ";
         }
       }
+    }
+
+    & .gatsby-resp-image-figcaption {
+      @apply mt-2;
+      @apply text-center;
+      @apply text-sm;
+      @apply text-gray-500;
     }
   }
 }

@@ -98,7 +98,7 @@ let make = (~data as rawData, ~pageContext: pageContext) => {
           </ExternalLink>}
         />
       </div>
-      <Divider className="mt-24" />
+      <Divider className="mt-24 mb-16" />
       <PostContent html={markdown.html->getExn} />
       <Divider className="mt-16" />
       <section className="max-w-2xl mx-auto pt-12">
