@@ -175,7 +175,7 @@
       }
     }
 
-    & .gatsby-resp-image-figcaption {
+    & figcaption {
       @apply mt-2;
       @apply text-center;
       @apply text-sm;
