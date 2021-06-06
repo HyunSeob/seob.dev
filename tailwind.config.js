@@ -1,7 +1,12 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  purge: {
+    content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    options: {
+      safelist: [/from-.+-600/, /to-.+-600/],
+    },
+  },
   darkMode: "media",
   theme: {
     boxShadow: {
