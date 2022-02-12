@@ -7,7 +7,8 @@
     "bs-css-emotion",
     "@ahrefs/bs-emotion",
     "reason-date-fns",
-    "@moox/bs-react-helmet"
+    "@moox/bs-react-helmet",
+    "@reasonml-community/graphql-ppx"
   ],
   "sources": [
     {

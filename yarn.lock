@@ -2886,12 +2886,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reasonml-community/graphql-ppx@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@reasonml-community/graphql-ppx@npm:1.0.1"
+"@reasonml-community/graphql-ppx@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@reasonml-community/graphql-ppx@npm:1.2.3"
   peerDependencies:
-    bs-platform: ^8.1.0
-  checksum: 9326bc73c3a5ef8eb5d8a72a124fb7b75644d0da4d0d4e03f56bd5cf6b8a7cd6e1396c2fa05ac1358600cc7328792fae98f570eb6129fe439eb89cfbaebc6f3d
+    rescript: ^9.1.0
+  checksum: 2896fa59c9a62e903b25179643d3cdf6d389fca0134173b70c6f88244270306b99ebd046079881b442cdbbbe820e161b1215cc7bc9a40d0168525875afc49ded
   languageName: node
   linkType: hard
 
@@ -14446,6 +14446,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "nanoid@npm:3.2.0"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 5d6d2922e7dad98e5e9621845b0a92126a1baaf040490afac74c91e872ebe50173a8a85f364b3e42e3c57f06ad44a5e3f149f516fb95411f7fae9284c5dc280b
+  languageName: node
+  linkType: hard
+
 "nanomatch@npm:^1.2.9":
   version: 1.2.13
   resolution: "nanomatch@npm:1.2.13"
@@ -16060,6 +16069,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"picocolors@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "picocolors@npm:1.0.0"
+  checksum: 6616d34dd03bde8881c63402dea34f0b5972845b04b791b234446d4a408bc3d7f932acea3970a6b671d8f5c5aae1b1ce9fc1f89b0ed9a363469cf9da8e916b71
+  languageName: node
+  linkType: hard
+
 "picomatch@npm:^2.0.4, picomatch@npm:^2.0.5, picomatch@npm:^2.2.1":
   version: 2.2.2
   resolution: "picomatch@npm:2.2.2"
@@ -17057,7 +17073,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:latest":
+"postcss@npm:^8.1.6, postcss@npm:^8.2.1":
   version: 8.2.1
   resolution: "postcss@npm:8.2.1"
   dependencies:
@@ -17065,6 +17081,17 @@ fsevents@~2.1.2:
     nanoid: ^3.1.20
     source-map: ^0.6.1
   checksum: aa7ba3d80a4d8e25bc1a3f61461d7f6b60d361fb1301465d0eb973c5f38b347ad0842b02b8cc8801ede46559391d7c640c7313301a829ef9ca77e34be7230854
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.6":
+  version: 8.4.6
+  resolution: "postcss@npm:8.4.6"
+  dependencies:
+    nanoid: ^3.2.0
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 31a040159e48075efddb2a770ae2a3443b1d35e37b267421052b96b960ee2a65b095ee79f70df8c03c9fb7a5a9846793cfef8e655d6fde42a971ed11593f9703
   languageName: node
   linkType: hard
 
@@ -18779,7 +18806,7 @@ fsevents@~2.1.2:
     "@graphql-cli/codegen": ^1.17.18
     "@graphql-codegen/introspection": ^1.18.1
     "@moox/bs-react-helmet": ^3.0.0
-    "@reasonml-community/graphql-ppx": ^1.0.1
+    "@reasonml-community/graphql-ppx": ^1.2.3
     autoprefixer: latest
     ayu: "github:ayu-theme/vscode-ayu"
     bs-css: ^13.4.1
@@ -18806,7 +18833,7 @@ fsevents@~2.1.2:
     gatsby-transformer-sharp: ^2.9.0
     graphql-cli: 4.1.0
     lodash: ^4.17.20
-    postcss: latest
+    postcss: ^8.4.6
     postcss-import: ^14.0.0
     postcss-preset-env: ^6.7.0
     react: ^17.0.1
@@ -19362,6 +19389,13 @@ fsevents@~2.1.2:
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1"
   checksum: d8d45f29987d00d995ccda308dcc78b710031a9958fdb5d26674d32220c952eb7a8562062638d91896628ae4eef30e1cd112a6a547563dfda0b013024c2a9bf7
+  languageName: node
+  linkType: hard
+
+"source-map-js@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "source-map-js@npm:1.0.2"
+  checksum: 3bb232796ad9b71bad151cb30c7fc1a2afdaf5bcfd4aa7806f56a2d4ff4824e1481e960436c5e9ec26e8c1ae129aee8107df0859c15b1ccada31a9a7ef254abc
   languageName: node
   linkType: hard
 
